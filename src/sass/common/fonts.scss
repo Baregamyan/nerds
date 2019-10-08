@@ -1,23 +1,23 @@
 @font-face {
-	font-family: 'Montserrat';
+	font-family: 'Roboto';
   src:
-    url('../fonts/montserrat-medium.woff2') format('woff2'),
-    url('../fonts/montserrat-medium.woff') format('woff');
+    url('../fonts/roboto-regular.woff2') format('woff2'),
+    url('../fonts/roboto-regular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:
+    url('../fonts/roboto-medium.woff2') format('woff2'),
+    url('../fonts/roboto-medium.woff') format('woff');
   font-weight: 500;
 }
 
 @font-face {
-	font-family: 'Montserrat';
+	font-family: 'Roboto';
   src:
-    url('../fonts/montserrat-semibold.woff2') format('woff2'),
-    url('../fonts/montserrat-semibold.woff') format('woff');
-  font-weight: 600;
-}
-
-@font-face {
-	font-family: 'Montserrat';
-  src:
-    url('../fonts/montserrat-bold.woff2') format('woff2'),
-    url('../fonts/montserrat-bold.woff') format('woff');
+    url('../fonts/roboto-bold.woff2') format('woff2'),
+    url('../fonts/roboto-bold.woff') format('woff');
   font-weight: 700;
 }
