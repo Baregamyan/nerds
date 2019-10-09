@@ -1,8 +1,9 @@
 extends ../common/layout.pug
 
 block vars
-  -var currentPage = pages.index.title
+  -var index = true
 
 block mainContent
-  h1 Главная
-  p Текст главной
+  include ../blocks/activity.pug
+  include ../blocks/about.pug
+  include ../blocks/examples.pug

@@ -1,0 +1,8 @@
+footer.footer
+  .socials
+    ul.socials__list
+      each social in footer.socials.list
+        a.socials__item(href=social.link alt=social.name)
+      h2.socials__title #{footer.socials.title}
+      p.socials__discount #{footer.socials.discount}
+

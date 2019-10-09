@@ -1,0 +1,6 @@
+section.activity
+  each item in pages.index.activity
+    .activity__item(class=item.class)
+      h2.activity__title #{item.title}
+      p.activity__description #{item.description}
+      a.button(class=item.buttonClass href=item.link) Заказать

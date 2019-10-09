@@ -1,3 +1,18 @@
 nav.nav
-  each link in nav
-    a(href=link.url class="nav__link") #{link.name}
+  if index
+    a.logo(href="")
+      img(alt=nav.logo.name)
+  else
+    a.logo(href=nav[0].url)
+      img(alt=nav.logo.name)
+  ul.menu
+    each item in nav.menu
+      li
+        a.menu__item(href=item.url) #{item.name}
+  ul.menu.menu--user
+    each item in nav.user
+      li
+        a.menu__item(class=item.class href=item.url) #{item.name}
+  button.nav__toggle
+    span.nav__hamburger
+

@@ -1,0 +1,19 @@
+header.header
+  include ../blocks/nav.pug
+  section.sliders
+    each slider in pages.index.sliders.content
+      article.slider
+        .slider__wrapper
+          h2.slider__title #{slider.title}
+          p.slider__description #{slider.description}
+          a.button(href=slider.buttonSrc) Узнать больше
+        img.slider__img(src=slider.imgSrc alt=slider.title)
+    .sliders__controls
+      each control in pages.index.sliders.controls
+        button(class=control.class type="submit")
+
+
+
+
+
+

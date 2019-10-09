@@ -4,10 +4,9 @@ html(lang="ru")
   include head.pug
   body
     include svg.pug
-    header.header
-      include ../blocks/nav.pug
+    include ../blocks/header.pug
     main
       block mainContent
-    footer.footer
-      a.footer__copyright(href="https://jokerinteractive.ru") Создание сайта
+    include ../blocks/map.pug
+    include ../blocks/footer.pug
   script(src="js/script.js")
