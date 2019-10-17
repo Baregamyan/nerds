@@ -1,3 +1,168 @@
 .header {
-
+  background-color: $color-bg-secondary;
 }
+
+.header__sliders {
+  position: relative;
+
+  max-width: $width-xl;
+
+  margin: auto;
+
+  padding-right: $gap;
+  padding-left: $gap;
+  @media #{$media-lg} {
+    padding-right: $gapSm;
+    padding-left: $gapSm;
+  }
+}
+
+.slider {
+  display: flex;
+  &--expensive {
+    .slider__wrapper {
+      margin-right: 55px;
+      @media #{$media-lg} {
+        margin-right: 0;
+      }
+    }
+    .slider__title {
+      max-width: 380px;
+    }
+    .slider__description {
+      max-width: 376px;
+    }
+    .slider__image {
+      max-width: 698px;
+    }
+  }
+  &--mathematics {
+    .slider__wrapper {
+      margin-right: -25px;
+      @media #{$media-lg} {
+        margin-right: 0;
+      }
+    }
+    .slider__title {
+      max-width: 516px;
+    }
+    .slider__description {
+      max-width: 409px;
+    }
+    .slider__image {
+      max-width: 663px;
+    }
+  }
+  &--night {
+    .slider__wrapper {
+      margin-right: -2px;
+      @media #{$media-lg} {
+        margin-right: 0;
+      }
+    }
+    .slider__title {
+      max-width: 408px;
+    }
+    .slider__description {
+      max-width: 409px;
+    }
+    .slider__image {
+      max-width: 759px;
+    }
+  }
+  @media #{$media-lg} {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.slider__wrapper {
+  max-width: 580px;
+  @media #{$media-lg} {
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    order: 2;
+
+    text-align: center;
+  }
+}
+
+.slider__title {
+  margin-top: 67px;
+  margin-bottom: 28px;
+
+  font-size: $font-xxxl;
+  font-weight: 500;
+
+  color: $color-bold;
+  @media #{$media-lg} {
+    margin-top: 0;
+
+    font-size: $font-xxl;
+  }
+}
+
+.slider__description {
+  margin-bottom: 42px;
+
+  font-size: $font-sm;
+}
+
+.slider__image {
+  object-fit: contain;
+
+  width: 100%;
+  min-width: 320px;
+}
+
+.slider__controls {
+  position: absolute;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 88px;
+
+  bottom: 96px;
+  left: 50%;
+
+  transform: translateX(-50%);
+  @media #{$media-lg} {
+    bottom: 4px;
+  }
+}
+
+.slider__control {
+  position: relative;
+
+  width: 18px;
+  height: 18px;
+
+  border: 1px solid $color-bg;
+  border-radius: 15px;
+
+  background-color: $color-bg;
+
+  cursor: pointer;
+  &--active {
+    &::before {
+      position: absolute;
+      content: "";
+
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+
+      width: 6px;
+      height: 6px;
+
+      border: 1px solid $color-active-control;
+      border-radius: 15px;
+      border-width: 2px;
+    }
+
+  }
+}
+

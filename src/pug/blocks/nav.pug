@@ -1,9 +1,9 @@
 nav.nav
   if index
-    a.logo(href="")
-      img(alt=nav.logo.name)
+    a.nav__logo(href="")
+      img(src=nav.logo.src alt=nav.logo.name width=nav.logo.width height=nav.logo.height)
   else
-    a.logo(href=nav[0].url)
+    a.nav__logo(href=nav[0].url)
       img(alt=nav.logo.name)
   ul.menu
     each item in nav.menu
