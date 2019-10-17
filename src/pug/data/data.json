@@ -5,29 +5,32 @@
       "sliders": {
         "content": [
           {
+            "modClass": "slider--expensive",
             "title": "Долго, дорого, скрупулезно.",
             "description": "Математически выверенный дизайн для вашего сайта или мобильного приложения.",
-            "imgSrc": "",
+            "imgSrc": "/images/slide-expensive.png",
             "buttonSrc": ""
           }, {
+            "modClass": "slider--mathematics",
             "title": "Любим математику как никто другой",
             "description": "Никакого креатива, только математические формулы для расчета идеальных пропорций.",
-            "imgSrc": "",
+            "imgSrc": "/images/slide-mathematics.png",
             "buttonSrc": ""
           }, {
+            "modClass": "slider--night",
             "title": "Только ночь, только хардкор",
             "description": "Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.",
-            "imgSrc": "",
+            "imgSrc": "/images/slide-night.png",
             "buttonSrc": ""
           }
         ],
         "controls": [
           {
-            "class": "sliders__control.sliders__button--expensive"
+            "modClass": "slider__control--expensive"
           }, {
-            "class": "sliders__control.sliders__button--mathematics"
+            "modClass": "slider__control--mathematics"
           }, {
-            "class": "sliders__control.sliders__button--night"
+            "modClass": ".slider__control--night"
           }
         ]
       },
@@ -65,8 +68,6 @@
             "name": "Слайдшоу и видео для корпоративных презентаций"
           }
         ],
-        "logoSrc": "",
-        "logoAlt": "Студия Нёрдс",
         "tableTitle": "C 2004 года Любим точность во всем:",
         "table": {
           "heads": [
@@ -116,6 +117,10 @@
   },
   "nav": {
     "logo": {
+      "src": "/images/nerds-logo.png",
+      "alt": "Студия Нёрдс",
+      "width": "160",
+      "height": "65",
       "url": "index.html",
       "name": "Нердс-лого"
     },
