@@ -6,9 +6,7 @@
   position: relative;
 
   max-width: $width-xl;
-
   margin: auto;
-
   padding-right: $gap;
   padding-left: $gap;
   @media #{$media-lg} {
@@ -79,10 +77,9 @@
 .slider__wrapper {
   max-width: 580px;
   @media #{$media-lg} {
+    order: 2;
     margin-top: 0;
     margin-bottom: 40px;
-
-    order: 2;
 
     text-align: center;
   }
@@ -92,9 +89,8 @@
   margin-top: 67px;
   margin-bottom: 28px;
 
-  font-size: $font-xxxl;
   font-weight: 500;
-
+  font-size: $font-xxxl;
   color: $color-bold;
   @media #{$media-lg} {
     margin-top: 0;
@@ -110,22 +106,20 @@
 }
 
 .slider__image {
-  object-fit: contain;
-
   width: 100%;
   min-width: 320px;
+
+  object-fit: contain;
 }
 
 .slider__controls {
   position: absolute;
+  bottom: 96px;
+  left: 50%;
 
   display: flex;
   justify-content: space-between;
-
   width: 88px;
-
-  bottom: 96px;
-  left: 50%;
 
   transform: translateX(-50%);
   @media #{$media-lg} {
@@ -139,30 +133,24 @@
   width: 18px;
   height: 18px;
 
+  background-color: $color-bg;
   border: 1px solid $color-bg;
   border-radius: 15px;
-
-  background-color: $color-bg;
-
   cursor: pointer;
   &--active {
     &::before {
-      position: absolute;
       content: "";
-
+      position: absolute;
       top: 50%;
       left: 50%;
-
-      transform: translate(-50%, -50%);
 
       width: 6px;
       height: 6px;
 
       border: 1px solid $color-active-control;
-      border-radius: 15px;
       border-width: 2px;
+      border-radius: 15px;
+      transform: translate(-50%, -50%);
     }
-
   }
 }
-

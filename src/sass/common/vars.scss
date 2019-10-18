@@ -1,7 +1,7 @@
+//Шрифты
 $font-family: Roboto, Arial, sans-serif;
 $line-height: 1.3;
 $letter-spacing: 0;
-
 $font-xs: 14px;
 $font-sm: 16px;
 $font-md: 18px;
@@ -10,9 +10,10 @@ $font-xl: 36px;
 $font-xxl: 45px;
 $font-xxxl: 55px;
 
+//Цвета
 $color-base: #283136;
 $color-bold: #000000;
-$color-bg: #fff;
+$color-bg: #ffffff;
 $color-bg-secondary: #eeeeee;
 $color-primary: #fb565a;
 $color-secondary: #00ca74;
@@ -22,17 +23,19 @@ $color-link: $color-primary;
 $color-hover: darken($color-primary, 15%);
 $color-active: lighten($color-primary, 15%);
 
+//Размеры
 $width-xs: 320px;
 $width-sm: 576px;
 $width-md: 768px;
 $width-lg: 992px;
 $width-xl: 1440px;
 
+//Медиа
 $media-sm: screen and (max-width: $width-sm);
 $media-md: screen and (max-width: $width-md);
 $media-lg: screen and (max-width: $width-lg);
 $media-xl: screen and (max-width: $width-xl);
 
+//Отступы
 $gap: 140px;
 $gapSm: 20px;
-
