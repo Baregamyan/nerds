@@ -133,11 +133,13 @@
 
 .slider__controls {
   position: absolute;
-  width: 88px !important;
   bottom: 84px !important;
   left: 50% !important;
-  transform: translateX(-50%);
   z-index: 9999;
+
+  width: 88px !important;
+
+  transform: translateX(-50%);
   @media #{$media-lg} {
     bottom: 5px !important;
   }

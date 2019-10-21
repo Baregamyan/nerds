@@ -35,6 +35,7 @@
 
   list-style: none;
   @media #{$media-lg} {
+    display: none;
     flex-direction: column;
     align-items: center;
   }
@@ -43,6 +44,12 @@
       width: 100%;
 
       text-align: center;
+    }
+  }
+  &--open {
+    display: flex;
+    @media #{$media-lg} {
+      display: flex;
     }
   }
 }
