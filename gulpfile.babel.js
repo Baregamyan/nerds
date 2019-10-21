@@ -31,7 +31,7 @@ const path = {
   styles: {
     root: `${dirs.src}/sass`,
     compile: `${dirs.src}/sass/style.scss`,
-    save: `${dirs.dest}/css`
+    save: `${dirs.dest}/css/`
   },
   views: {
     data: `${dirs.src}/pug/data/data.json`,
@@ -41,11 +41,15 @@ const path = {
   },
   scripts: {
     root: `${dirs.src}/js`,
+    save: `${dirs.dest}/js/`
   },
   images: {
     root: `${dirs.src}/images`,
     save: `${dirs.dest}/images`
   },
+  libs: {
+    swiper: `./node_modules/swiper`
+  }
 };
 
 /**
@@ -79,10 +83,14 @@ export const views = () => src(`${path.views.compile}/*.pug`)
 
 export const scripts = () => src(`${path.scripts.root}/**/*.js`)
   .pipe(babel({
-    presets: ['es2015']
+    presets: ['@babel/preset-env']
   }))
+  .pipe(dest(path.scripts.save))
   .pipe(uglify())
-  .pipe(dest(path.scripts.root));
+  .pipe(rename({
+    suffix: `.min`
+  }))
+  .pipe(dest(path.scripts.save));
 
 export const images = () => src(`${path.images.root}/**/*`)
   .pipe(imagemin([
@@ -108,10 +116,23 @@ export const devWatch = () => {
 };
 
 /**
+ * Библиотеки
+ */
+const swiperCSS = () => {
+  return src(`${path.libs.swiper}/css/swiper.min.css`)
+    .pipe(dest(`${path.styles.save}`))
+};
+
+const swiperJS = () => {
+  return src(`${path.libs.swiper}/js/swiper.min.js`)
+    .pipe(dest(`${path.scripts.save}`))
+};
+
+/**
  * Задачи для разработки
  */
 // export const dev = series(clean, parallel(buildStyles, buildViews, buildScripts), devWatch);
-export const dev = series(csscorr, parallel(styles, views), devWatch);
+export const dev = series(csscorr, parallel(swiperCSS, swiperJS), parallel(styles, views, scripts), devWatch);
 
 /**
  * Для билда
