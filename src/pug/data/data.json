@@ -68,6 +68,14 @@
             "name": "Слайдшоу и видео для корпоративных презентаций"
           }
         ],
+        "logo": {
+          "src": "/images/nerds-illustration.png",
+          "alt": "Студия Нёрдс",
+          "width": "360",
+          "height":"208"
+        },
+        "logoSrc": "/images/nerds-illustration.png",
+        "logoAlt": "Студия Нёрдс",
         "tableTitle": "C 2004 года Любим точность во всем:",
         "table": {
           "heads": [

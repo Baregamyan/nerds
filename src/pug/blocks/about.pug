@@ -2,16 +2,17 @@ section.about
   .about__wrapper-description
     h1.about__title #{pages.index.about.title}
     p.about__description #{pages.index.about.description}
-    ul.about__list #{pages.index.about.worksTitle}
+    h3.about__subtitle #{pages.index.about.worksTitle}
+    ul.about__list
       each item in pages.index.about.works
         li.about__list-item #{item.name}
   .about__wrapper-data
-    img.about__logo(src=logoSrc alt=logoAlt)
+    img.about__logo(src=pages.index.about.logo.src alt=pages.index.about.logo.alt width=pages.index.about.logo.width height=pages.index.about.logo.height)
     table.table
-      caption.table__title #{pages.index.about.table.tableTitle}
+      caption.table__title #{pages.index.about.tableTitle}
       tr
         each number in pages.index.about.table.numbers
-            td.table__number #{number.indicator}
+          td.table__number #{number.indicator}
         tr
         each head in pages.index.about.table.heads
           th.table__head #{head.name}
