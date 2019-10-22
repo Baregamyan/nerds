@@ -2,9 +2,43 @@
   padding: 15px 53px;
 
   font-weight: 500;
+  font-size: $font-sm;
   text-align: center;
   color: $color-bg;
   text-transform: uppercase;
 
   background-color: $color-primary;
+  border: none;
+  cursor: pointer;
+
+  transition: 0.2s;
+  &:hover {
+    color: $color-bg;
+
+    background-color: $color-primary-darker;
+  }
+  &:active {
+    color: transparentize($color-white, 0.7);
+
+    background-color: $color-primary-darken;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  }
+  &--apps {
+    background-color: $color-button-green;
+    &:hover {
+      background-color: $color-button-green-hover;
+    }
+    &:active {
+      background-color: $color-button-green-active;
+    }
+  }
+  &--presentation {
+    background-color: $color-button-orange;
+    &:hover {
+      background-color: $color-button-orange-hover;
+    }
+    &:active {
+      background-color: $color-button-orange-active;
+    }
+  }
 }
