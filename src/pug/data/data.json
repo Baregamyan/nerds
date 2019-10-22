@@ -100,25 +100,25 @@
       },
       "examples": [
         {
-          "src": "",
+          "src": "/images/html-academy-logo.png",
           "alt": "HTML Academy",
-          "width": "",
-          "height": ""
+          "width": "199",
+          "height": "68"
         }, {
-          "src": "",
+          "src": "/images/borodinski-logo.png",
           "alt": "Barbershop Borodinsky",
-          "width": "",
-          "height": ""
+          "width": "209",
+          "height": "90"
         }, {
-          "src": "",
+          "src": "/images/pink-logo.png",
           "alt": "Pink",
-          "width": "",
-          "height": ""
+          "width": "185",
+          "height": "52"
         }, {
-          "src": "",
+          "src": "/images/mishka-logo.png",
           "alt": "Mishka",
-          "width": "",
-          "height": ""
+          "width": "173",
+          "height": "84"
         }
       ]
     }
