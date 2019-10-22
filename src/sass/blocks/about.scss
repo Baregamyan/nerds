@@ -5,8 +5,8 @@
   margin-right: auto;
   margin-left: auto;
   padding-right: $gap;
-  padding-left: $gap;
   padding-bottom: 76px;
+  padding-left: $gap;
 
   border-top: 2px solid $color-bg-secondary;
   @media #{$media-lg} {
@@ -19,6 +19,9 @@
 .about__wrapper-description {
   max-width: 652px;
   padding-right: 20px;
+  @media #{$media-lg} {
+    max-width: none;
+  }
 }
 
 .about__title {
@@ -30,6 +33,7 @@
   color: $color-bold;
   @media #{$media-md} {
     margin-top: 40px;
+
     font-size: $font-xl;
   }
 }
@@ -50,7 +54,8 @@
 
 .about__list-item {
   &::before {
-    content: '';
+    content: "";
+
     display: inline-block;
     width: 25px;
     height: 2px;
@@ -68,10 +73,11 @@
 }
 
 .about__logo {
-  margin-top: 40px;
-  margin-bottom: 41px;
   width: 100%;
   max-width: 360px;
+  margin-top: 40px;
+  margin-bottom: 41px;
+
   object-fit: contain;
 }
 
@@ -82,11 +88,11 @@
       display: flex;
       & tr {
         display: flex;
-        order: 2;
         flex-direction: column;
+        order: 2;
         &:last-of-type {
-          order: 1;
           justify-content: space-around;
+          order: 1;
         }
       }
     }
@@ -110,12 +116,14 @@
 
 .table__number {
   padding-right: 15px;
-  font-size: $font-xxl;
+
   font-weight: 700;
-  color: $color-bold;
+  font-size: $font-xxl;
   text-align: left;
+  color: $color-bold;
   @media #{$media-sm} {
     padding-right: 0;
+
     text-align: right;
   }
 }
