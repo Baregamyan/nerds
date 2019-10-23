@@ -52,10 +52,14 @@
       display: flex;
     }
   }
+  &--no-js {
+    display: flex;
+  }
 }
 
 .menu__item {
   margin-right: 40px;
+  padding-bottom: 10px;
 
   font-weight: 500;
   color: $color-bold;
@@ -87,6 +91,9 @@
         left: 0;
       }
     }
+  }
+  &--active {
+    border-bottom: 2px solid $color-primary;
   }
 }
 
