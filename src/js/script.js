@@ -28,6 +28,9 @@ burger.addEventListener('click', (evt)=> {
 const slider = new Swiper('.header__sliders', {
   loop: true,
   spaceBetween: 150,
+  autoplay: {
+    delay: 4000,
+  },
   pagination: {
     el: '.slider__controls',
     clickable: true,
