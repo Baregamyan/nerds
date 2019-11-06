@@ -23,6 +23,20 @@ burger.addEventListener('click', (evt)=> {
 });
 
 /**
+ * Контейнер с контактами поверх карты
+ */
+var contacts = document.querySelector('.map__contacts');
+var contactsToggle = document.querySelector('.map__toggle');
+
+/**
+ * Возможность скрытия блока с контактными данными на планшетной и мобильной версии
+ */
+contactsToggle.addEventListener('click', ()=> {
+  contacts.classList.toggle('map__contacts--closed');
+  contactsToggle.classList.toggle('map__toggle--closed');
+});
+
+/**
  * Инициализация слайдера в шапке
  */
 const slider = new Swiper('.header__sliders', {
