@@ -167,14 +167,17 @@
       "discount": "Скидка 10% для друзей из социальных сетей.",
       "list": [
         {
+          "class": "socials__item--vk",
           "name": "Вконтакте",
-          "link": "vk.com"
+          "link": "www.vk.com"
         }, {
+          "class": "socials__item--fb",
           "name": "Фейсбук",
-          "link": "facebook.com"
+          "link": "www.facebook.com"
         }, {
+          "class": "socials__item--insta",
           "name": "Инстаграм",
-          "link": "instagram.com"
+          "link": "www.instagram.com"
         }
       ]
     }
