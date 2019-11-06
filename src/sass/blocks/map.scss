@@ -5,7 +5,7 @@
   height: 416px;
 }
 
-.map__wrapper {
+.map__contacts {
   position: absolute;
   top: 54px;
   left: $gap;
@@ -67,6 +67,7 @@
     display: block;
   }
   &--closed {
+    opacity: 1;
     &::before {
       transform: rotate(-70deg);
     }
