@@ -238,21 +238,25 @@ template {
 
 .close {
   position: absolute;
-  right: 20px;
   top: 20px;
+  right: 20px;
+
   width: 21px;
   height: 21px;
+
   background: transparent;
   border: none;
   opacity: 0.5;
   &::before,
   &::after {
+    content: " ";
     position: absolute;
     top: 0;
     left: 15px;
-    content: ' ';
-    height: 21px;
+
     width: 2px;
+    height: 21px;
+
     background-color: $color-primary;
   }
   &::before {
@@ -262,4 +266,3 @@ template {
     transform: rotate(-45deg);
   }
 }
-

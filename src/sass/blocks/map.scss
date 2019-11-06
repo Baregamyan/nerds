@@ -20,6 +20,7 @@
   padding-left: 50px;
 
   background-color: $color-bg;
+
   transition: 0.2s;
   @media #{$media-lg} {
     left: $gapSm;
@@ -60,6 +61,7 @@
 
 .map__toggle {
   display: none;
+
   outline: transparent;
   @media #{$media-lg} {
     display: block;
@@ -69,9 +71,9 @@
       transform: rotate(-70deg);
     }
     &::after {
-      transform: rotate(70deg);
       top: 7px;
+
+      transform: rotate(70deg);
     }
   }
 }
-
