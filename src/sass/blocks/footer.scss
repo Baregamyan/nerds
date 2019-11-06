@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: $width-xl;
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-left: auto;
+  padding-right: $gap;
+  padding-left: $gap;
+}
+
