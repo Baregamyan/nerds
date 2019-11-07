@@ -3,8 +3,8 @@ nav.nav
     a.nav__logo(href="")
       img(src=nav.logo.src alt=nav.logo.name width=nav.logo.width height=nav.logo.height)
   else
-    a.nav__logo(href=nav[0].url)
-      img(alt=nav.logo.name)
+    a.nav__logo(href=nav.logo.url)
+      img(src=nav.logo.src alt=nav.logo.name width=nav.logo.width height=nav.logo.height)
   ul.menu.menu--no-js
     each item in nav.menu
       if currentPageLink === item.url
