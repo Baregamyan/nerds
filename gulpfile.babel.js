@@ -121,8 +121,8 @@ export const sprite = () => {
     .pipe(svgstore({
       inlineSvg: true
     }))
-  .pipe(rename('sprite.svg'))
-  .pipe(dest(path.images.save))
+    .pipe(rename('sprite.svg'))
+    .pipe(dest(path.images.save))
 };
 
 const copy = () => {
