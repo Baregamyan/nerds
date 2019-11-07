@@ -5,29 +5,32 @@
       "sliders": {
         "content": [
           {
+            "modClass": "slider--expensive",
             "title": "Долго, дорого, скрупулезно.",
             "description": "Математически выверенный дизайн для вашего сайта или мобильного приложения.",
-            "imgSrc": "",
+            "imgSrc": "/images/slide-expensive.png",
             "buttonSrc": ""
           }, {
+            "modClass": "slider--mathematics",
             "title": "Любим математику как никто другой",
             "description": "Никакого креатива, только математические формулы для расчета идеальных пропорций.",
-            "imgSrc": "",
+            "imgSrc": "/images/slide-mathematics.png",
             "buttonSrc": ""
           }, {
+            "modClass": "slider--night",
             "title": "Только ночь, только хардкор",
             "description": "Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.",
-            "imgSrc": "",
+            "imgSrc": "/images/slide-night.png",
             "buttonSrc": ""
           }
         ],
         "controls": [
           {
-            "class": "sliders__control.sliders__button--expensive"
+            "modClass": "slider__control--expensive"
           }, {
-            "class": "sliders__control.sliders__button--mathematics"
+            "modClass": "slider__control--mathematics"
           }, {
-            "class": "sliders__control.sliders__button--night"
+            "modClass": ".slider__control--night"
           }
         ]
       },
@@ -65,7 +68,13 @@
             "name": "Слайдшоу и видео для корпоративных презентаций"
           }
         ],
-        "logoSrc": "",
+        "logo": {
+          "src": "/images/nerds-illustration.png",
+          "alt": "Студия Нёрдс",
+          "width": "360",
+          "height":"208"
+        },
+        "logoSrc": "/images/nerds-illustration.png",
         "logoAlt": "Студия Нёрдс",
         "tableTitle": "C 2004 года Любим точность во всем:",
         "table": {
@@ -91,31 +100,41 @@
       },
       "examples": [
         {
-          "src": "",
+          "src": "/images/html-academy-logo.png",
           "alt": "HTML Academy",
-          "width": "",
-          "height": ""
+          "width": "199",
+          "height": "68"
         }, {
-          "src": "",
+          "src": "/images/borodinski-logo.png",
           "alt": "Barbershop Borodinsky",
-          "width": "",
-          "height": ""
+          "width": "209",
+          "height": "90"
         }, {
-          "src": "",
+          "src": "/images/pink-logo.png",
           "alt": "Pink",
-          "width": "",
-          "height": ""
+          "width": "185",
+          "height": "52"
         }, {
-          "src": "",
+          "src": "/images/mishka-logo.png",
           "alt": "Mishka",
-          "width": "",
-          "height": ""
+          "width": "173",
+          "height": "84"
         }
-      ]
+      ],
+      "map": {
+        "title": "Nёrds design studio",
+        "address": "191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8",
+        "phone": "тел. +7 (812) 275-75-75",
+        "button": "Напишите нам"
+      }
     }
   },
   "nav": {
     "logo": {
+      "src": "/images/nerds-logo.png",
+      "alt": "Студия Нёрдс",
+      "width": "160",
+      "height": "65",
       "url": "index.html",
       "name": "Нердс-лого"
     },
@@ -148,14 +167,17 @@
       "discount": "Скидка 10% для друзей из социальных сетей.",
       "list": [
         {
+          "class": "socials__item--vk",
           "name": "Вконтакте",
-          "link": "vk.com"
+          "link": "www.vk.com"
         }, {
+          "class": "socials__item--fb",
           "name": "Фейсбук",
-          "link": "facebook.com"
+          "link": "www.facebook.com"
         }, {
+          "class": "socials__item--insta",
           "name": "Инстаграм",
-          "link": "instagram.com"
+          "link": "www.instagram.com"
         }
       ]
     }

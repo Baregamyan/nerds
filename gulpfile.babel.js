@@ -15,6 +15,7 @@ import webp from 'gulp-webp';
 import imagemin from 'gulp-imagemin';
 import mozjpeg from 'imagemin-mozjpeg';
 import pngquant from 'imagemin-pngquant';
+import svgstore from 'gulp-svgstore';
 
 /**
  *  Основные директории
@@ -31,7 +32,7 @@ const path = {
   styles: {
     root: `${dirs.src}/sass`,
     compile: `${dirs.src}/sass/style.scss`,
-    save: `${dirs.dest}/css`
+    save: `${dirs.dest}/css/`
   },
   views: {
     data: `${dirs.src}/pug/data/data.json`,
@@ -41,11 +42,15 @@ const path = {
   },
   scripts: {
     root: `${dirs.src}/js`,
+    save: `${dirs.dest}/js/`
   },
   images: {
     root: `${dirs.src}/images`,
     save: `${dirs.dest}/images`
   },
+  libs: {
+    swiper: `./node_modules/swiper`
+  }
 };
 
 /**
@@ -79,10 +84,14 @@ export const views = () => src(`${path.views.compile}/*.pug`)
 
 export const scripts = () => src(`${path.scripts.root}/**/*.js`)
   .pipe(babel({
-    presets: ['es2015']
+    presets: ['@babel/preset-env']
   }))
+  .pipe(dest(path.scripts.save))
   .pipe(uglify())
-  .pipe(dest(path.scripts.root));
+  .pipe(rename({
+    suffix: '.min'
+  }))
+  .pipe(dest(path.scripts.save));
 
 export const images = () => src(`${path.images.root}/**/*`)
   .pipe(imagemin([
@@ -107,15 +116,42 @@ export const devWatch = () => {
   // watch(sources.scripts, scripts);
 };
 
+export const sprite = () => {
+  return src(`${path.images.root}/**/*.svg`)
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(dest(path.images.save))
+};
+
+const copy = () => {
+  return src(`${dirs.src}/**/*.{woff,woff2}`)
+    .pipe(dest(`${dirs.dest}`))
+};
+
+/**
+ * Библиотеки
+ */
+const swiperCSS = () => {
+  return src(`${path.libs.swiper}/css/swiper.min.css`)
+    .pipe(dest(`${path.styles.save}`))
+};
+
+const swiperJS = () => {
+  return src(`${path.libs.swiper}/js/swiper.min.js`)
+    .pipe(dest(`${path.scripts.save}`))
+};
+
 /**
  * Задачи для разработки
  */
 // export const dev = series(clean, parallel(buildStyles, buildViews, buildScripts), devWatch);
-export const dev = series(csscorr, parallel(styles, views), devWatch);
+export const dev = series(csscorr, parallel(swiperCSS, swiperJS), parallel(styles, views, scripts, sprite), devWatch);
 
 /**
  * Для билда
  */
-export const build = series(clean, csscorr, parallel(styles, views, images, scripts), convertToWebp);
+export const build = series(clean, copy, csscorr, parallel(copy, styles, views, images, scripts), convertToWebp);
 
 export default dev;
