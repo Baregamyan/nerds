@@ -129,6 +129,9 @@
       }
     }
   },
+  "catalog": {
+    "title": "Магазин готовых габлонов"
+  },
   "nav": {
     "logo": {
       "src": "/images/nerds-logo.png",
@@ -146,7 +149,7 @@
         "url": "",
         "name": "Клиенты"
       }, {
-        "url": "",
+        "url": "catalog.html",
         "name": "Магазин"
       }, {
         "url": "",
