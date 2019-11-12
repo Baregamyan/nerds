@@ -127,10 +127,81 @@
         "phone": "тел. +7 (812) 275-75-75",
         "button": "Напишите нам"
       }
+    },
+    "catalog": {
+      "title": "Магазин готовых габлонов",
+      "filter": {
+          "price": {
+            "title": "Стоимость",
+            "buttons": [
+              {
+                "class": "filter__range-button--min",
+                "aria": "Минимальная стоимость"
+              },
+              {
+                "class": "filter__range-button--max",
+                "aria": "Максимальная стоимость"
+              }
+            ],
+            "inputs": [
+              {
+                "label": "от",
+                "placeholder": "0"
+              },
+              {
+                "label": "до",
+                "placeholder": "15 000"
+              }
+            ]
+          },
+          "grid": {
+            "title": "Сетка",
+            "radio": [
+              {
+                "class": "",
+                "type": "active",
+                "name": "Адаптивная"
+              }, {
+                "class": "",
+                "type": "",
+                "name": "Фиксированная"
+              },
+              {
+                "class": "",
+                "type": "",
+                "name": "Резиновая"
+              }
+            ]
+          },
+          "specificities": {
+            "title": "Особенности",
+            "checklist": [
+              {
+                "class": "",
+                "type": "checked",
+                "name": "Слайдер"
+              }, {
+                "class": "",
+                "type": "",
+                "name": "Блок преимуществ"
+              }, {
+                "class": "",
+                "type": "checked",
+                "name": "Новости"
+              }, {
+                "class": "",
+                "type": "",
+                "name": "Галерея"
+              }, {
+                "class": "",
+                "type": "",
+                "name": "Корзина"
+              }
+            ]
+          }
+        },
+      "button": "Показать"
     }
-  },
-  "catalog": {
-    "title": "Магазин готовых габлонов"
   },
   "nav": {
     "logo": {

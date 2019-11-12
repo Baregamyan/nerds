@@ -1,0 +1,10 @@
+section.catalog
+  aside.filter
+    form.filter__form
+      fieldset.filter__option
+        h2.filter__title #{pages.catalog.filter.price.title}
+        .filter__range-wrapper
+          .filter__range-bar
+          each button in pages.catalog.filter.price.buttons
+            button.filter__range-button(class=button.class type="button" aria-label=button.aria)
+  section.products
