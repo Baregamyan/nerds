@@ -1,15 +1,9 @@
 header.header
   include ../blocks/nav.pug
-  section.header__sliders.swiper-container
-    .swiper-wrapper
-      each slider in pages.index.sliders.content
-        article.slider.swiper-slide(class=slider.modClass)
-          .slider__wrapper
-            h2.slider__title #{slider.title}
-            p.slider__description #{slider.description}
-            a.button(href=slider.buttonSrc) Узнать больше
-          img.slider__image(src=slider.imgSrc alt=slider.title)
-    .slider__controls
+  if index
+    include ../blocks/main-slider.pug
+  else
+    h1.header__title #{currentPageTitle}
 
 
 
