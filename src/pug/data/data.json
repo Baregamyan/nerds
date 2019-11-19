@@ -131,76 +131,158 @@
     "catalog": {
       "title": "Магазин готовых габлонов",
       "filter": {
-          "price": {
-            "title": "Стоимость",
-            "buttons": [
-              {
-                "class": "filter__range-button--min",
-                "aria": "Минимальная стоимость"
-              },
-              {
-                "class": "filter__range-button--max",
-                "aria": "Максимальная стоимость"
-              }
-            ],
-            "inputs": [
-              {
-                "label": "от",
-                "placeholder": "0"
-              },
-              {
-                "label": "до",
-                "placeholder": "15 000"
-              }
-            ]
-          },
-          "grid": {
-            "title": "Сетка",
-            "radio": [
-              {
-                "class": "",
-                "type": "active",
-                "name": "Адаптивная"
-              }, {
-                "class": "",
-                "type": "",
-                "name": "Фиксированная"
-              },
-              {
-                "class": "",
-                "type": "",
-                "name": "Резиновая"
-              }
-            ]
-          },
-          "specificities": {
-            "title": "Особенности",
-            "checklist": [
-              {
-                "class": "",
-                "type": "checked",
-                "name": "Слайдер"
-              }, {
-                "class": "",
-                "type": "",
-                "name": "Блок преимуществ"
-              }, {
-                "class": "",
-                "type": "checked",
-                "name": "Новости"
-              }, {
-                "class": "",
-                "type": "",
-                "name": "Галерея"
-              }, {
-                "class": "",
-                "type": "",
-                "name": "Корзина"
-              }
-            ]
-          }
+        "price": {
+          "title": "Стоимость:",
+          "buttons": [
+            {
+              "class": "filter__range-button--min",
+              "aria": "Минимальная стоимость"
+            },
+            {
+              "class": "filter__range-button--max",
+              "aria": "Максимальная стоимость"
+            }
+          ],
+          "inputs": [
+            {
+              "label": "от",
+              "placeholder": "0",
+              "id": "from"
+            },
+            {
+              "label": "до",
+              "placeholder": "15 000",
+              "id": "until"
+            }
+          ]
         },
-      "button": "Показать"
+        "grid": {
+          "title": "Сетка:",
+          "radio": [
+            {
+              "class": "filter__radio--active",
+              "checked": "true",
+              "name": "Адаптивная",
+              "id": "adaptive"
+            }, {
+              "class": "",
+              "checked": "",
+              "name": "Фиксированная",
+              "id": "fix"
+            },
+            {
+              "class": "",
+              "checked": "",
+              "name": "Резиновая",
+              "id": "responsive"
+            }
+          ]
+        },
+        "specificities": {
+          "title": "Особенности",
+          "checklist": [
+            {
+              "class": "",
+              "checked": "true",
+              "name": "Слайдер",
+              "id": "Slider"
+            }, {
+              "class": "",
+              "checked": "",
+              "name": "Блок преимуществ",
+              "id": "advantages"
+            }, {
+              "class": "",
+              "checked": "true",
+              "name": "Новости",
+              "id": "news"
+            }, {
+              "class": "",
+              "checked": "",
+              "name": "Галерея",
+              "id": "gallery"
+            }, {
+              "class": "",
+              "checked": "",
+              "name": "Корзина",
+              "id": "basket"
+            }
+          ]
+        },
+        "button": "Показать"
+      },
+      "products": {
+        "title": "Сортировать:",
+        "sortBy": [
+          {
+            "name": "По цене",
+            "current": true
+          }, {
+            "name": "По типу",
+            "current": false
+          }, {
+            "name": "По названию",
+            "current": false
+          }
+        ],
+        "sortByMajor": [
+          {
+            "name": "От большего к меньшему",
+            "current": "true"
+          }, {
+            "name": "От меньшего к большему",
+            "current": "false"
+          }
+        ],
+        "product": [
+          {
+            "src": "",
+            "title": "Sedona",
+            "description": "Информационный сайт для туристов",
+            "price": "9 900 руб."
+          }, {
+            "src": "",
+            "title": "Pink App",
+            "description": "Продуктовый лендинг приложения для iOS и Android",
+            "price": "9 900 руб."
+          }, {
+            "src": "",
+            "title": "Barbershop",
+            "description": "Сайт салона красоты. Для мужчин, да.",
+            "price": "9 900 руб."
+          }, {
+            "src": "",
+            "title": "Mishka",
+            "description": "Интернет-магазин вязаных игрушек",
+            "price": "9 900 руб."
+          }, {
+            "src": "",
+            "title": "A Plus",
+            "description": "Лендинг курсов повышения квалификации",
+            "price": "9 900 руб."
+          }, {
+            "src": "",
+            "title": "Кваст",
+            "description": "Промо-сайт производителя крафтового кваса",
+            "price": "9 900 руб."
+          }
+        ],
+        "pagination": [
+          {
+            "name": "1",
+            "current": true
+          }, {
+            "name": "2",
+            "current": false
+          }, {
+            "name": "3",
+            "current": false
+          }, {
+            "name": "Следующая",
+            "current": false
+          }
+        ]
+      }
     }
   },
   "nav": {

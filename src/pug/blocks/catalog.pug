@@ -7,4 +7,58 @@ section.catalog
           .filter__range-bar
           each button in pages.catalog.filter.price.buttons
             button.filter__range-button(class=button.class type="button" aria-label=button.aria)
+        .filter__range-inputs
+          each input in pages.catalog.filter.price.inputs
+            .filter__range-input-wrapper
+              label.filter__label(for=input.id) #{input.label}
+              input.filter__input(id=input.id placeholder=input.placeholder)
+      fieldset.filter__option
+        h2.filter__title #{pages.catalog.filter.grid.title}
+        each radio in pages.catalog.filter.grid.radio
+          label.filter__label(class=radio.class for=radio.id) #{radio.name}
+          if radio.checked
+            input.filter__radio(type="radio" id=radio.id name="grid-chooser" checked)
+          else
+            input.filter__radio(type="radio" id=radio.id name="grid-chooser")
+      fieldset.filter__option
+        h2.filter__title #{pages.catalog.filter.specificities.title}
+        each checkbox in pages.catalog.filter.specificities.checklist
+          label.filter__label(for=checkbox.id ) #{checkbox.name}
+          if checkbox.checked
+            input.filter__input(type="checkbox" id=checkbox.id checked)
+          else
+            input.filter__input(type="checkbox" id=checkbox.id)
+      button.filter__button(type="submit") #{pages.catalog.filter.button}
   section.products
+    .products__sort
+      h2.products__sort-title #{pages.catalog.products.title}
+      .products__sort-wrapper
+        each sort in pages.catalog.products.sortBy
+          if sort.current
+            a.products__sort-by.products__sort-by--active(href="") #{sort.name}
+          else
+            a.products__sort-by(href="") #{sort.name}
+      .products__sort-major-wrapper
+        each sort in pages.catalog.products.sortByMajor
+          if sort.current
+            a.products__sort-major.products__sort-major--active(href="") #{sort.name}
+    .products__product-wrapper
+      each product in pages.catalog.products.product
+        a.products__product
+          img.product__image(src=product.src alt=product.alt)
+          .product__overlay
+            h2.product__title #{product.title}
+            p.product__description #{product.description}
+            span.product__price.button #{product.price}
+    .products__pagination-wrapper
+      each pagination in pages.catalog.products.pagination
+        if pagination.current
+          a.product__pagination.product__pagination--active #{pagination.name}
+        else if pagination.name === "Следующая"|| pagination.name === "Предыдущая"
+          button.product__pagination.product__pagination--wide(type="button") #{pagination.name}
+        else
+          a.product__pagination(href="") #{pagination.name}
+
+
+
+
