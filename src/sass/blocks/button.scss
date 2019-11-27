@@ -44,4 +44,21 @@
   &--write-us {
     padding: 15px 43px;
   }
+  &--gray {
+    width: 100%;
+
+    color: $color-bold;
+
+    background-color: $color-bg-secondary;
+    &:hover {
+      color: $color-bold;
+
+      background-color: $color-button-gray-hover;
+    }
+    &:active {
+      color: transparentize($color-bold, 0.7);
+
+      background-color: $color-button-gray-active;
+    }
+  }
 }

@@ -160,21 +160,24 @@
           "title": "Сетка:",
           "radio": [
             {
-              "class": "filter__radio--active",
               "checked": "true",
+              "disabled": "",
               "name": "Адаптивная",
-              "id": "adaptive"
+              "id": "adaptive",
+              "value": "adaptive"
             }, {
-              "class": "",
               "checked": "",
+              "disabled": "",
               "name": "Фиксированная",
-              "id": "fix"
+              "id": "fix",
+              "value": "fix"
             },
             {
-              "class": "",
               "checked": "",
+              "disabled": "true",
               "name": "Резиновая",
-              "id": "responsive"
+              "id": "responsive",
+              "value": "responsive"
             }
           ]
         },
@@ -182,29 +185,34 @@
           "title": "Особенности",
           "checklist": [
             {
-              "class": "",
               "checked": "true",
+              "disabled": "",
               "name": "Слайдер",
-              "id": "Slider"
+              "value": "slider",
+              "id": "slider"
             }, {
-              "class": "",
               "checked": "",
+              "disabled": "",
               "name": "Блок преимуществ",
+              "value": "advantages",
               "id": "advantages"
             }, {
-              "class": "",
               "checked": "true",
+              "disabled": "",
               "name": "Новости",
+              "value": "news",
               "id": "news"
             }, {
-              "class": "",
-              "checked": "",
+              "checked": "false",
+              "disabled": "",
               "name": "Галерея",
+              "value": "gallery",
               "id": "gallery"
             }, {
-              "class": "",
               "checked": "",
+              "disabled": "true",
               "name": "Корзина",
+              "value": "basket",
               "id": "basket"
             }
           ]
@@ -228,40 +236,42 @@
         "sortByMajor": [
           {
             "name": "От большего к меньшему",
+            "class": "products__sort-major--up",
             "current": "true"
           }, {
             "name": "От меньшего к большему",
+            "class": "products__sort-major--down",
             "current": "false"
           }
         ],
         "product": [
           {
-            "src": "",
+            "src": "/images/img-sedona.jpg",
             "title": "Sedona",
             "description": "Информационный сайт для туристов",
             "price": "9 900 руб."
           }, {
-            "src": "",
+            "src": "/images/img-pink.jpg",
             "title": "Pink App",
             "description": "Продуктовый лендинг приложения для iOS и Android",
             "price": "9 900 руб."
           }, {
-            "src": "",
+            "src": "/images/img-barbershop.jpg",
             "title": "Barbershop",
             "description": "Сайт салона красоты. Для мужчин, да.",
             "price": "9 900 руб."
           }, {
-            "src": "",
+            "src": "/images/img-mishka.jpg",
             "title": "Mishka",
             "description": "Интернет-магазин вязаных игрушек",
             "price": "9 900 руб."
           }, {
-            "src": "",
+            "src": "/images/img-aplus.jpg",
             "title": "A Plus",
             "description": "Лендинг курсов повышения квалификации",
             "price": "9 900 руб."
           }, {
-            "src": "",
+            "src": "/images/img-kvast.jpg",
             "title": "Кваст",
             "description": "Промо-сайт производителя крафтового кваса",
             "price": "9 900 руб."
