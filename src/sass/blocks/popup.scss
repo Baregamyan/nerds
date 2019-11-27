@@ -1,0 +1,133 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+
+  display: none;
+  max-width: 960px;
+  max-height: calc(100vh - 210px);
+  padding: 73px 100px 84px 100px ;
+  overflow-y: auto;
+
+  background-color: $color-bg;
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+  transform: translate(-50%,-50%);
+  @media #{$media-md} {
+    padding: 40px 50px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  @media #{$media-sm} {
+    padding: 40px 10px;
+  }
+  &--show {
+    display: block;
+  }
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__title {
+  margin-bottom: 49px;
+
+  font-weight: 700;
+  font-size: $font-xxl;
+  color: $color-bold;
+}
+
+.popup__label {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: $font-sm;
+  color: $color-bold;
+}
+
+.popup__form {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.popup__inputs-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  @media #{$media-lg} {
+    flex-wrap: wrap;
+  }
+}
+
+.popup__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  &:first-child {
+    margin-right: 40px;
+  }
+}
+
+.popup__input {
+  box-sizing: border-box;
+  width: 360px;
+  padding: 18px 16px 19px 16px;
+
+  font-size: $font-sm;
+  color: $color-input-placeholder;
+
+  border: 2px solid $color-range-bar;
+  &::placeholder {
+    font-size: $font-sm;
+    color: $color-input-placeholder;
+
+    opacity: 0.5;
+
+    font-width: 400;
+  }
+  &:focus {
+    border-color: $color-bold;
+    &::placeholder {
+      color: $color-input-placeholder;
+
+      border-color: $color-bold;
+      opacity: 1;
+    }
+  }
+  @media #{$media-md} {
+    width: 280px;
+  }
+}
+
+.popup__textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.popup__textarea {
+  height: 118px;
+  margin-bottom: 47px;
+  padding-top: 14px;
+  padding-left: 15px;
+
+  color: $color-input-placeholder;
+  &::placeholder {
+    color: $color-input-placeholder;
+
+    opacity: 0.5;
+  }
+  &:focus {
+    border-color: $color-bold;
+    &::placeholder {
+      color: $color-input-placeholder;
+
+      border-color: $color-bold;
+      opacity: 1;
+    }
+  }
+}

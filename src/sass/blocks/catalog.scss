@@ -1,6 +1,7 @@
 .catalog {
-  @include container();
   margin-bottom: 50px;
+
+  @include container();
   @media #{$media-lg} {
     align-items: center;
   }
