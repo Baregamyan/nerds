@@ -104,7 +104,7 @@ ymaps.ready(function () {
   });
 
 /**
- * Открытие попапа "Напишите нам"
+ * Открытие/закрытие попапа "Напишите нам"
  */
   openPopupWriteUsBtn.addEventListener('click', ()=> {
     popupWriteUs.classList.add('popup--show');
