@@ -1,0 +1,128 @@
+.products {
+  max-width: 760px;
+}
+
+.products__sort {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 11px;
+}
+
+.products__sort-title {
+  flex-grow: 1;
+  margin-right: 10px;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-weight: 700;
+  font-size: $font-md;
+  color: $color-bold;
+  text-transform: uppercase;
+}
+
+.products__sort-by {
+  padding-right: 26px;
+
+  font-size: $font-xs;
+  color: $color-bold;
+  text-transform: uppercase;
+
+  opacity: 0.3;
+  &:last-of-type {
+    padding-right: 48px;
+  }
+  &:hover {
+    color: $color-bold;
+
+    opacity: 0.6;
+  }
+  &:active {
+    color: $color-bold;
+
+    opacity: 1;
+  }
+  &--active {
+    opacity: 1;
+    &:hover {
+      cursor: default;
+      opacity: 1;
+    }
+  }
+  @media #{$media-sm} {
+    &:last-of-type {
+      padding-right: 10px;
+    }
+  }
+}
+
+.products__sort-major-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 40px;
+  @media #{$media-sm} {
+    margin: 15px auto 10px auto;
+  }
+}
+
+.products__sort-major {
+  width: 0;
+  height: 0;
+
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+
+  transition: 0.2s;
+  &--up {
+    border-top: 12px solid $color-sort-major;
+    border-bottom: 0;
+  }
+  &--down {
+    border-top: 0;
+    border-bottom: 12px solid $color-sort-major;
+  }
+  &:hover {
+    border-top-color: $color-sort-major-hover;
+    border-bottom-color: $color-sort-major-hover;
+  }
+}
+
+.products__products-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 760px;
+  @media #{$media-md} {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.products__pagination {
+  display: inline-block;
+
+  width: 50px;
+  height: 50px;
+
+  margin-right: 11px;
+  margin-bottom: 10px;
+
+  padding-right: 0;
+  padding-left: 0;
+
+  box-sizing: border-box;
+
+  background-color: $color-bg-secondary;
+  border: 3px solid $color-bg-secondary;
+  &--active {
+    background-color: $color-bg;
+    &:hover {
+      background-color: initial;
+      cursor: default;
+    }
+  }
+  &--wide {
+    min-width: 260px;
+  }
+}

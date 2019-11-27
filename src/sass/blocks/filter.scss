@@ -1,0 +1,292 @@
+.filter {
+  width: 30%;
+  min-width: 260px;
+  max-width: 260px;
+  margin-right: 140px;
+  @media #{$media-lg} {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.filter__option {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  border: none;
+  &--range {
+    margin-bottom: 62px;
+    @media #{$media-lg} {
+      margin-bottom: 10px;
+    }
+  }
+  &--grid {
+    margin-bottom: 57px;
+    @media #{$media-lg} {
+      margin-bottom: 10px;
+    }
+    & .filter__input {
+      display: none;
+    }
+  }
+  &--specificities {
+    margin-bottom: 50px;
+    @media #{$media-lg} {
+      margin-bottom: 10px;
+    }
+    & .filter__input {
+      display: none;
+    }
+  }
+}
+
+.filter__title {
+  margin-bottom: 21px;
+
+  font-weight: 700;
+  font-size: $font-md;
+  color: $color-bold;
+  text-transform: uppercase;
+}
+
+.filter__range-wrapper {
+  max-width: 261px;
+}
+
+.filter__range-bar {
+  position: relative;
+
+  box-sizing: border-box;
+  min-height: 80px;
+  margin-top: 35px;
+  margin-bottom: 14px;
+
+  background-color: $color-bg-secondary;
+  border-radius: 4px;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 19px;
+    z-index: 1;
+
+    height: 2px;
+
+    transform: translateY(-50%);
+  }
+  &::before {
+    width: 219px;
+
+    background-color: $color-range-bar;
+  }
+  &::after {
+    width: 152px;
+
+    background-color: $color-button-green;
+  }
+  @media #{$media-lg} {
+    margin-top: 0;
+  }
+}
+
+.filter__range-button {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  z-index: 2;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: $color-bg;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.75);
+  transform: translateY(-50%);
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 4px;
+    height: 4px;
+
+    background-color: $color-button-filter-point;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+  }
+  &--max {
+    margin-left: 142px;
+  }
+}
+
+.filter__range-inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter__range-inputs-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.filter__input-wrapper {
+  position: relative;
+  //&:hover,
+  //&:focus,
+  //&:focus-within {
+  //  color: $color-bold;
+  //  & span {
+  //    opacity: 1;
+  //  }
+  //}
+}
+
+.filter__label {
+  position: relative;
+
+  font-weight: 400;
+  font-size: $font-sm;
+  line-height: 22px;
+
+  cursor: pointer;
+  &--checkable {
+    margin-bottom: 25px;
+    margin-left: 35px;
+  }
+  &:hover {
+    color: $color-bold;
+    & span {
+      opacity: 1;
+    }
+  }
+}
+
+.filter__radio {
+  position: absolute;
+  left: -35px;
+
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+
+  background-color: transparent;
+  border: 4px solid $color-checklist-items;
+  border-radius: 50%;
+  opacity: 0.4;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: none;
+    width: 8px;
+    height: 8px;
+
+    background-color: $color-checklist-items;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.filter__input {
+  box-sizing: border-box;
+  width: 80px;
+  height: 38px;
+  margin-left: 11px;
+  padding: 12px 15px;
+
+  font-size: $font-sm;
+
+  background-color: $color-bg-secondary;
+  border: none;
+}
+
+.filter__checkbox {
+  position: absolute;
+  left: -35px;
+
+  box-sizing: border-box;
+  width: 23px;
+  height: 23px;
+
+  border: 2px solid $color-checklist-items;
+  border-radius: 2px;
+  opacity: 0.4;
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 15px);
+    left: 50%;
+
+    display: none;
+    width: 5px;
+    height: 15px;
+
+    border: solid;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+  }
+}
+
+.filter__radio-input {
+  position: absolute;
+
+  appearance: none;
+  &:checked + .filter__label span {
+    &::after {
+      display: block;
+    }
+  }
+  &:disabled + .filter__label {
+    cursor: default;
+    opacity: 0.3;
+    & span {
+      opacity: 0.2;
+    }
+    &:hover {
+      color: $color-base;
+    }
+  }
+  &:hover,
+  &:focus + .filter__label {
+    color: $color-bold;
+    & span {
+      opacity: 1;
+    }
+  }
+}
+
+.filter__checkbox-input {
+  position: absolute;
+
+  appearance: none;
+  &:checked + .filter__label span {
+    &::after {
+      display: block;
+    }
+  }
+  &:disabled + .filter__label {
+    cursor: default;
+    opacity: 0.3;
+    & span {
+      opacity: 0.2;
+    }
+    &:hover {
+      color: $color-base;
+    }
+  }
+  &:hover,
+  &:focus + .filter__label {
+    color: $color-bold;
+    & span {
+      opacity: 1;
+    }
+  }
+}
