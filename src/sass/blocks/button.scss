@@ -12,7 +12,8 @@
   cursor: pointer;
 
   transition: 0.2s;
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-bg;
 
     background-color: $color-primary-darker;

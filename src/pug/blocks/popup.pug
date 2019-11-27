@@ -1,0 +1,17 @@
+section.popup.popup--write-us
+  h2.popup__title #{popup.title}
+  button.close.close--write-us(tabindex=0)
+  form.popup__form
+    .popup__inputs-wrapper
+      each input in popup.inputs
+        .popup__input-wrapper
+          label.popup__label(for=input.id) #{input.label}
+          input.popup__input(id=input.id type=input.type placeholder=input.placeholder required=input.required? "required":"")
+    .popup__textarea-wrapper
+      label.popup__label(for=popup.textarea.id) #{popup.textarea.label}
+      textarea.popup__textarea(id=popup.textarea.id placeholder=popup.textarea.placeholder)
+  a.button.button--popup-write-us(href="") #{popup.button}
+
+
+
+
