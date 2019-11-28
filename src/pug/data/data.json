@@ -5,19 +5,19 @@
       "sliders": {
         "content": [
           {
-            "modClass": "slider--expensive",
+            "modClass": "main-slider__slide--expensive",
             "title": "Долго, дорого, скрупулезно.",
             "description": "Математически выверенный дизайн для вашего сайта или мобильного приложения.",
             "imgSrc": "/images/slide-expensive.",
             "buttonSrc": ""
           }, {
-            "modClass": "slider--mathematics",
+            "modClass": "main-slider__slide--mathematics",
             "title": "Любим математику как никто другой",
             "description": "Никакого креатива, только математические формулы для расчета идеальных пропорций.",
             "imgSrc": "/images/slide-mathematics.",
             "buttonSrc": ""
           }, {
-            "modClass": "slider--night",
+            "modClass": "main-slider__slide--night",
             "title": "Только ночь, только хардкор",
             "description": "Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.",
             "imgSrc": "/images/slide-night.",
