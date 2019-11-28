@@ -1,6 +1,8 @@
 .main-slider {
   position: relative;
+
   padding-bottom: $gapSm;
+
   @include container();
 }
 

@@ -4,6 +4,7 @@
   justify-content: space-between;
   margin-bottom: 18px;
   padding-top: 50px;
+
   @include container();
   @media #{$media-lg} {
     margin-bottom: 30px;
