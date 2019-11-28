@@ -8,19 +8,19 @@
             "modClass": "slider--expensive",
             "title": "Долго, дорого, скрупулезно.",
             "description": "Математически выверенный дизайн для вашего сайта или мобильного приложения.",
-            "imgSrc": "/images/slide-expensive.png",
+            "imgSrc": "/images/slide-expensive.",
             "buttonSrc": ""
           }, {
             "modClass": "slider--mathematics",
             "title": "Любим математику как никто другой",
             "description": "Никакого креатива, только математические формулы для расчета идеальных пропорций.",
-            "imgSrc": "/images/slide-mathematics.png",
+            "imgSrc": "/images/slide-mathematics.",
             "buttonSrc": ""
           }, {
             "modClass": "slider--night",
             "title": "Только ночь, только хардкор",
             "description": "Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.",
-            "imgSrc": "/images/slide-night.png",
+            "imgSrc": "/images/slide-night.",
             "buttonSrc": ""
           }
         ],

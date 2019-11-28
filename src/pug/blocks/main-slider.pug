@@ -6,5 +6,8 @@ section.main-slider.swiper-container
           h2.main-slider__title #{slider.title}
           p.main-slider__description #{slider.description}
           a.button(href=slider.buttonSrc) Узнать больше
-        img.main-slider__image(src=slider.imgSrc alt=slider.title)
+        picture
+          source(type="image/webp" srcset=slider.imgSrc+'webp')
+          source(type="image/png" srcset=slider.imgSrc+'png')
+          img.main-slider__image(src=slider.imgSrc+'png' alt=slider.title)
   .main-slider__controls
