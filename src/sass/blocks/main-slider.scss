@@ -1,15 +1,7 @@
 .main-slider {
   position: relative;
-
-  max-width: $width-xl;
-  margin: auto;
-  padding-right: $gap;
   padding-bottom: $gapSm;
-  padding-left: $gap;
-  @media #{$media-lg} {
-    padding-right: $gapSm;
-    padding-left: $gapSm;
-  }
+  @include container();
 }
 
 .main-slider__slide {

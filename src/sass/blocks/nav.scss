@@ -1,19 +1,12 @@
 .nav {
   position: relative;
 
-  display: flex;
   justify-content: space-between;
-  max-width: $width-xl;
-  margin: auto;
   margin-bottom: 18px;
   padding-top: 50px;
-  padding-right: $gap;
-  padding-left: $gap;
+  @include container();
   @media #{$media-lg} {
-    flex-direction: column;
     margin-bottom: 30px;
-    padding-right: $gapSm;
-    padding-left: $gapSm;
   }
 }
 

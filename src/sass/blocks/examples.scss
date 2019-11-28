@@ -1,21 +1,13 @@
 .examples {
-  display: flex;
   justify-content: center;
   align-items: center;
-  max-width: $width-xl;
-  margin-right: auto;
   margin-bottom: 80px;
-  margin-left: auto;
-  padding-right: $gap;
-  padding-left: $gap;
 
   border-top: 2px solid $color-bg-secondary;
   border-bottom: 2px solid $color-bg-secondary ;
-  @media #{$media-lg} {
-    flex-direction: column;
-    padding-right: $gapSm;
-    padding-left: $gapSm;
-  }
+
+  @include container();
+
 }
 
 .examples__label-wrapper {

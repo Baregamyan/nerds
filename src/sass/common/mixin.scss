@@ -1,12 +1,12 @@
 @mixin container {
   display: flex;
   max-width: $width-xl;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: $gap;
   padding-left: $gap;
   @media #{$media-lg} {
     flex-direction: column;
-    margin-bottom: 30px;
     padding-right: $gapSm;
     padding-left: $gapSm;
   }

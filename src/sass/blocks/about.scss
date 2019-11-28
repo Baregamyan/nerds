@@ -1,19 +1,10 @@
 .about {
-  display: flex;
   justify-content: space-between;
-  max-width: 1440px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $gap;
   padding-bottom: 76px;
-  padding-left: $gap;
 
   border-top: 2px solid $color-bg-secondary;
-  @media #{$media-lg} {
-    flex-direction: column;
-    padding-right: $gapSm;
-    padding-left: $gapSm;
-  }
+
+  @include container();
 }
 
 .about__wrapper-description {
