@@ -1,0 +1,28 @@
+aside.filter
+  form.filter__form
+    fieldset.filter__option.filter__option--range
+      h2.filter__title #{pages.catalog.filter.price.title}
+      .filter__range-wrapper
+        .filter__range-bar
+          each button in pages.catalog.filter.price.buttons
+            button.filter__range-button(class=button.class type="button" aria-label=button.aria tabindex="0")
+        .filter__range-inputs
+          each input in pages.catalog.filter.price.inputs
+            .filter__range-inputs-wrapper
+              label.filter__label #{input.label}
+                input.filter__input(placeholder=input.placeholder)
+    fieldset.filter__option.filter__option--grid
+      h2.filter__title #{pages.catalog.filter.grid.title}
+      each radio in pages.catalog.filter.grid.radio
+        .filter__input-wrapper
+          input.filter__radio-input(id=radio.id type="radio" name="grid-chooser" value=radio.value checked=radio.checked? "checked" : null tabindex="0" disabled=radio.disabled? "disabled":null )
+          label.filter__label.filter__label--checkable(for=radio.id) #{radio.name}
+            span.filter__radio
+    fieldset.filter__option.filter__option--specificities
+      h2.filter__title #{pages.catalog.filter.specificities.title}
+      each checkbox in pages.catalog.filter.specificities.checklist
+        .filter__input-wrapper
+          input.filter__checkbox-input(id=checkbox.id type="checkbox" name="specificities" value=checkbox.value checked=checkbox.checked? "checked":null disabled=checkbox.disabled? "disabled":null tabindex="0")
+          label.filter__label.filter__label--checkable(for=checkbox.id) #{checkbox.name}
+            span.filter__checkbox
+    button.button.button--gray(type="submit") #{pages.catalog.filter.button}

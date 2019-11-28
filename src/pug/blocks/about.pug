@@ -7,7 +7,10 @@ section.about
       each item in pages.index.about.works
         li.about__list-item #{item.name}
   .about__wrapper-data
-    img.about__logo(src=pages.index.about.logo.src alt=pages.index.about.logo.alt width=pages.index.about.logo.width height=pages.index.about.logo.height)
+    picture
+      source(type="image/webp" srcset=pages.index.about.logo.src+"webp")
+      source(type="image/png" srcset=pages.index.about.logo.src+"png")
+      img.about__logo(src=pages.index.about.logo.src + "png" alt=pages.index.about.logo.alt width=pages.index.about.logo.width height=pages.index.about.logo.height)
     table.table
       caption.table__title #{pages.index.about.tableTitle}
       tr

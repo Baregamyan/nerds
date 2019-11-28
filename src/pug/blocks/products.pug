@@ -1,0 +1,14 @@
+section.products
+  .products__sort
+    h2.products__sort-title #{pages.catalog.products.title}
+    .products__sort-wrapper
+      each sort in pages.catalog.products.sortBy
+        a.products__sort-by(class=sort.current? "products__sort-by--active":null href="") #{sort.name}
+    .products__sort-major-wrapper
+      each sort in pages.catalog.products.sortByMajor
+        a.products__sort-major(class=sort.class class=sort.current? "products__sort-major--active":null href="" area-label=sort.name)
+  .products__products-wrapper
+    include product.pug
+  .products__pagination-wrapper
+    each pagination in pages.catalog.products.pagination
+      a.button.button--gray.products__pagination(class=pagination.current? "products__pagination--active":null class=pagination.name === "Следующая" || pagination.name === "Предыдущая"? "products__pagination--wide":null href="") #{pagination.name}

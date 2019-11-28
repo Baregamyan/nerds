@@ -69,7 +69,7 @@
           }
         ],
         "logo": {
-          "src": "/images/nerds-illustration.png",
+          "src": "/images/nerds-illustration.",
           "alt": "Студия Нёрдс",
           "width": "360",
           "height":"208"
@@ -100,22 +100,22 @@
       },
       "examples": [
         {
-          "src": "/images/html-academy-logo.png",
+          "src": "/images/html-academy-logo.",
           "alt": "HTML Academy",
           "width": "199",
           "height": "68"
         }, {
-          "src": "/images/borodinski-logo.png",
+          "src": "/images/borodinski-logo.",
           "alt": "Barbershop Borodinsky",
           "width": "209",
           "height": "90"
         }, {
-          "src": "/images/pink-logo.png",
+          "src": "/images/pink-logo.",
           "alt": "Pink",
           "width": "185",
           "height": "52"
         }, {
-          "src": "/images/mishka-logo.png",
+          "src": "/images/mishka-logo.",
           "alt": "Mishka",
           "width": "173",
           "height": "84"
@@ -246,32 +246,32 @@
         ],
         "product": [
           {
-            "src": "/images/img-sedona.jpg",
+            "src": "/images/img-sedona.",
             "title": "Sedona",
             "description": "Информационный сайт для туристов",
             "price": "9 900 руб."
           }, {
-            "src": "/images/img-pink.jpg",
+            "src": "/images/img-pink.",
             "title": "Pink App",
             "description": "Продуктовый лендинг приложения для iOS и Android",
             "price": "9 900 руб."
           }, {
-            "src": "/images/img-barbershop.jpg",
+            "src": "/images/img-barbershop.",
             "title": "Barbershop",
             "description": "Сайт салона красоты. Для мужчин, да.",
             "price": "9 900 руб."
           }, {
-            "src": "/images/img-mishka.jpg",
+            "src": "/images/img-mishka.",
             "title": "Mishka",
             "description": "Интернет-магазин вязаных игрушек",
             "price": "9 900 руб."
           }, {
-            "src": "/images/img-aplus.jpg",
+            "src": "/images/img-aplus.",
             "title": "A Plus",
             "description": "Лендинг курсов повышения квалификации",
             "price": "9 900 руб."
           }, {
-            "src": "/images/img-kvast.jpg",
+            "src": "/images/img-kvast.",
             "title": "Кваст",
             "description": "Промо-сайт производителя крафтового кваса",
             "price": "9 900 руб."

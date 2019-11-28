@@ -1,55 +1,6 @@
 section.catalog
-  aside.filter
-    form.filter__form
-      fieldset.filter__option.filter__option--range
-        h2.filter__title #{pages.catalog.filter.price.title}
-        .filter__range-wrapper
-          .filter__range-bar
-            each button in pages.catalog.filter.price.buttons
-              button.filter__range-button(class=button.class type="button" aria-label=button.aria tabindex="0")
-          .filter__range-inputs
-            each input in pages.catalog.filter.price.inputs
-              .filter__range-inputs-wrapper
-                label.filter__label #{input.label}
-                  input.filter__input(placeholder=input.placeholder)
-      fieldset.filter__option.filter__option--grid
-        h2.filter__title #{pages.catalog.filter.grid.title}
-        each radio in pages.catalog.filter.grid.radio
-          .filter__input-wrapper
-            input.filter__radio-input(id=radio.id type="radio" name="grid-chooser" value=radio.value checked=radio.checked? "checked" : null tabindex="0" disabled=radio.disabled? "disabled":null )
-            label.filter__label.filter__label--checkable(for=radio.id) #{radio.name}
-              span.filter__radio
-      fieldset.filter__option.filter__option--specificities
-        h2.filter__title #{pages.catalog.filter.specificities.title}
-        each checkbox in pages.catalog.filter.specificities.checklist
-          .filter__input-wrapper
-            input.filter__checkbox-input(id=checkbox.id type="checkbox" name="specificities" value=checkbox.value checked=checkbox.checked? "checked":null disabled=checkbox.disabled? "disabled":null tabindex="0")
-            label.filter__label.filter__label--checkable(for=checkbox.id) #{checkbox.name}
-              span.filter__checkbox
-      button.button.button--gray(type="submit") #{pages.catalog.filter.button}
-  section.products
-    .products__sort
-      h2.products__sort-title #{pages.catalog.products.title}
-      .products__sort-wrapper
-        each sort in pages.catalog.products.sortBy
-          a.products__sort-by(class=sort.current? "products__sort-by--active":null href="") #{sort.name}
-      .products__sort-major-wrapper
-        each sort in pages.catalog.products.sortByMajor
-          a.products__sort-major(class=sort.class class=sort.current? "products__sort-major--active":null href="" area-label=sort.name)
-    .products__products-wrapper
-      each product in pages.catalog.products.product
-        a.products__product.product(href="")
-          .product__top-panel
-            - for (var i =0; i < 3; i++)
-              span.product__circle
-          img.product__image(src=product.src alt=product.alt width="360" height="576")
-          .product__overlay
-            h2.product__title #{product.title}
-            p.product__description #{product.description}
-            span.product__price.button #{product.price}
-    .products__pagination-wrapper
-      each pagination in pages.catalog.products.pagination
-        a.button.button--gray.products__pagination(class=pagination.current? "products__pagination--active":null class=pagination.name === "Следующая" || pagination.name === "Предыдущая"? "products__pagination--wide":null href="") #{pagination.name}
+  include filter.pug
+  include products.pug
 
 
 

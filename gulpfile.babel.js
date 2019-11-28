@@ -102,7 +102,7 @@ export const images = () => src(`${path.images.root}/**/*`)
 
 export const convertToWebp = () => src(`${path.images.root}/**/*`)
   .pipe(webp({quality: 75}))
-  .pipe(dest(path.images.root));
+  .pipe(dest(path.images.save));
 
 export const clean = () => del([dirs.dest]);
 
