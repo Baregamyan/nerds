@@ -7,19 +7,19 @@
           {
             "modClass": "main-slider__slide--expensive",
             "title": "Долго, дорого, скрупулезно.",
-            "description": "Математически выверенный дизайн для вашего сайта или мобильного приложения.",
+            "description": ["Математически выверенный дизайн","для вашего сайта или мобильного приложения."],
             "imgSrc": "/images/slide-expensive.",
             "buttonSrc": ""
           }, {
             "modClass": "main-slider__slide--mathematics",
             "title": "Любим математику как никто другой",
-            "description": "Никакого креатива, только математические формулы для расчета идеальных пропорций.",
+            "description": ["Никакого креатива, только математические формулы", "для расчета идеальных пропорций."],
             "imgSrc": "/images/slide-mathematics.",
             "buttonSrc": ""
           }, {
             "modClass": "main-slider__slide--night",
             "title": "Только ночь, только хардкор",
-            "description": "Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.",
+            "description": ["Работать днем, как все? Мы против этого.", "Ближе к полуночи работа только начинается."],
             "imgSrc": "/images/slide-night.",
             "buttonSrc": ""
           }
@@ -36,19 +36,16 @@
       },
       "activity": [
         {
-          "class": "activity__item--websites",
           "title": "Веб-сайты",
           "description": "Мир никогда не будет прежним после того как увидит ваш сайт!",
           "buttonClass": "button--websites",
           "link": ""
         }, {
-          "class": "activity__item--apps",
           "title": "Приложения",
           "description": "Покорите топ-10 приложений в AppStore и Google Play",
           "buttonClass": "button--apps",
           "link": ""
         }, {
-          "class": "activity__item--presentations",
           "title": "Презентации",
           "description": "Вы даже не подозреваете, насколько вы изумительны!",
           "buttonClass": "button--presentation",
@@ -89,11 +86,11 @@
           ],
           "numbers": [
             {
-              "indicator": "146%"
+              "indicator": "146"
             }, {
-              "indicator": "100%"
+              "indicator": "100"
             }, {
-              "indicator": "50%"
+              "indicator": "50"
             }
           ]
         }

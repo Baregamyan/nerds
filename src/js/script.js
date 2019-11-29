@@ -42,9 +42,9 @@ contactsToggle.addEventListener('click', ()=> {
 const slider = new Swiper('.main-slider', {
   loop: true,
   spaceBetween: 150,
-  autoplay: {
-    delay: 4000,
-  },
+  // autoplay: {
+  //   delay: 4000,
+  // },
   pagination: {
     el: '.main-slider__controls',
     clickable: true,

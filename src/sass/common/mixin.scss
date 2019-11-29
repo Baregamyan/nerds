@@ -1,5 +1,6 @@
 @mixin container {
   display: flex;
+  box-sizing: border-box;
   max-width: $width-xl;
   margin-right: auto;
   margin-left: auto;
