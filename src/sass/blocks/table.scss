@@ -1,6 +1,13 @@
 .table {
+  display: flex;
+  flex-direction: column;
   max-width: 362px;
-  & tbody {
+  @media #{$media-sm} {
+    flex-direction: row;;
+  }
+  & tbody, & thead {
+    order:1;
+
     @media #{$media-sm} {
       display: flex;
       & tr {
@@ -14,16 +21,8 @@
       }
     }
   }
-}
-
-.table__title {
-  margin-bottom: 25px;
-
-  font-weight: 700;
-  color: $color-bold;
-  text-transform: uppercase;
-  @media #{$media-lg} {
-    margin-bottom: 20px;
+  & thead {
+    order: 2;
   }
 }
 

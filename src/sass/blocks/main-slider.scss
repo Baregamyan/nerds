@@ -4,7 +4,6 @@
   max-height: 420px;
   padding-bottom: $gapSm;
 
-
   @include container();
 }
 
@@ -30,9 +29,9 @@
       }
     }
     .main-slider__image {
+      max-width: 698px;
       margin-top: 8px;
       margin-left: -3px;
-      max-width: 698px;
     }
   }
   &--mathematics {
@@ -129,12 +128,12 @@
 
 .main-slider__controls {
   position: absolute;
-  display: flex;
-  justify-content: space-between;
   bottom: 95px !important;
   left: 50% !important;
   z-index: 9999;
 
+  display: flex;
+  justify-content: space-between;
   width: 98px !important;
 
   transform: translateX(-50%);

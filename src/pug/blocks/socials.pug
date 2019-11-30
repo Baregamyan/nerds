@@ -1,0 +1,8 @@
+section.socials
+  .socials__icons-wrapper
+    each social in footer.socials.list
+      a.socials__item(class=social.class href=social.link title=social.name)
+  .socials__text-wrapper
+    h2.socials__title #{footer.socials.title}
+    p.socials__discount #{footer.socials.discount}
+

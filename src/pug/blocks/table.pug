@@ -1,8 +1,9 @@
 table.table
-      caption.table__title #{pages.index.about.tableTitle}
-      tr
-        each number in pages.index.about.table.numbers
-          td.table__number #{number.indicator}<sup>%</sup>
-        tr
-        each head in pages.index.about.table.heads
-          th.table__head #{head.name}
+  thead
+    tr
+      each head in pages.index.about.table.heads
+        th.table__head #{head.name}
+  tbody
+    tr
+      each number in pages.index.about.table.numbers
+        td.table__number #{number.indicator}<sup>%</sup>

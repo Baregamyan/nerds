@@ -1,22 +1,6 @@
 nav.nav
-  if index
-    a.nav__logo(href="")
-      img(src=nav.logo.src alt=nav.logo.name width=nav.logo.width height=nav.logo.height)
-  else
-    a.nav__logo(href=nav.logo.url)
-      img(src=nav.logo.src alt=nav.logo.name width=nav.logo.width height=nav.logo.height)
-  ul.menu.menu--no-js
-    each item in nav.menu
-      if currentPageLink === item.url
-        li
-          a.menu__item(class="menu__item--active" href="") #{item.name}
-      else
-        li
-          a.menu__item(href=item.url) #{item.name}
-  ul.menu.menu--user.menu--no-js
-    each item in nav.user
-      li
-        a.menu__item(class=item.class href=item.url) #{item.name}
+  a.nav__logo(href=index? null:nav.logo.url)
+    img(src=nav.logo.src alt=nav.logo.name width=nav.logo.width height=nav.logo.height)
+  include menu.pug
   button.toggle.nav__toggle
     span.hamburger.nav__hamburger
-

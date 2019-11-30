@@ -32,16 +32,17 @@
 
 .about__description {
   margin-bottom: 39px;
+
   line-height: 24px;
 }
 
 .about__subtitle {
   margin-bottom: 28px;
 
-  font-size: $font-sm;
-  letter-spacing: -0.5px;
-  text-transform: uppercase;
   font-weight: 700;
+  font-size: $font-sm;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
 }
 
 .about__list {
@@ -52,6 +53,7 @@
 
 .about__list-item {
   margin-bottom: 24px;
+
   line-height: $line-height-lg;
   &:last-of-type {
     margin-bottom: 0;
@@ -82,4 +84,15 @@
   margin-bottom: 37px;
 
   object-fit: contain;
+}
+
+.about__subtitle {
+  margin-bottom: 25px;
+
+  font-weight: 700;
+  color: $color-bold;
+  text-transform: uppercase;
+  @media #{$media-lg} {
+    margin-bottom: 20px;
+  }
 }

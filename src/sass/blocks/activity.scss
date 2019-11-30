@@ -1,8 +1,8 @@
 .activity {
   flex-wrap: wrap;
   justify-content: space-between;
-
   margin-bottom: 50px;
+
   @include container();
 
   @media #{$media-lg} {
@@ -89,6 +89,7 @@
 
 .activity__title {
   margin-bottom: 16px;
+
   font-weight: 700;
   font-size: $font-lg;
   color: $color-bold;
@@ -97,6 +98,7 @@
 
 .activity__description {
   margin-bottom: 33px;
+
   line-height: 24px;
   color: $color-base;
 }

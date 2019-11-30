@@ -2,12 +2,12 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 80px;
+  padding-left: 63px;
 
   border-top: 2px solid $color-bg-secondary;
   border-bottom: 2px solid $color-bg-secondary ;
 
   @include container();
-  padding-left: 63px;
 }
 
 .examples__label-wrapper {

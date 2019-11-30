@@ -3,9 +3,7 @@
   "version": "0.0.1",
   "description": "Сайт дизайн студии Nerds",
   "main": "",
-  "dependencies": {
-    "swiper": "^5.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.3",
@@ -27,7 +25,8 @@
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
     "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-pngquant": "^8.0.0"
+    "imagemin-pngquant": "^8.0.0",
+    "swiper": "^5.1.0"
   },
   "browserslist": [
     "last 2 version",

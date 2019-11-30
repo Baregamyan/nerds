@@ -38,22 +38,23 @@
         {
           "title": "Веб-сайты",
           "description": "Мир никогда не будет прежним после того как увидит ваш сайт!",
-          "buttonClass": "button--websites",
+          "class": "activity__item--websites",
           "link": ""
         }, {
           "title": "Приложения",
           "description": "Покорите топ-10 приложений в AppStore и Google Play",
-          "buttonClass": "button--apps",
+          "class": "activity__item--apps",
           "link": ""
         }, {
           "title": "Презентации",
           "description": "Вы даже не подозреваете, насколько вы изумительны!",
-          "buttonClass": "button--presentation",
+          "class": "activity__item--presentations",
           "link": ""
         }
       ],
       "about": {
         "title": "Мы — маленькая, но гордая дизайн-студия из Краснодара.",
+        "subtitle": "C 2004 года Любим точность во всем:",
         "description": "Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.",
         "worksTitle": "Выполняем заказы на разработку:",
         "works": [
@@ -73,7 +74,6 @@
         },
         "logoSrc": "/images/nerds-illustration.png",
         "logoAlt": "Студия Нёрдс",
-        "tableTitle": "C 2004 года Любим точность во всем:",
         "table": {
           "heads": [
             {
