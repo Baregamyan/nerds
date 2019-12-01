@@ -1,373 +1,396 @@
 {
-  "pages": {
-    "index": {
-      "title": "Главная страница",
-      "sliders": {
-        "content": [
-          {
-            "modClass": "main-slider__slide--expensive",
-            "title": "Долго, дорого, скрупулезно.",
-            "description": ["Математически выверенный дизайн","для вашего сайта или мобильного приложения."],
-            "imgSrc": "/images/slide-expensive.",
-            "buttonSrc": ""
-          }, {
-            "modClass": "main-slider__slide--mathematics",
-            "title": "Любим математику как никто другой",
-            "description": ["Никакого креатива, только математические формулы", "для расчета идеальных пропорций."],
-            "imgSrc": "/images/slide-mathematics.",
-            "buttonSrc": ""
-          }, {
-            "modClass": "main-slider__slide--night",
-            "title": "Только ночь, только хардкор",
-            "description": ["Работать днем, как все? Мы против этого.", "Ближе к полуночи работа только начинается."],
-            "imgSrc": "/images/slide-night.",
-            "buttonSrc": ""
-          }
-        ],
-        "controls": [
-          {
-            "modClass": "slider__control--expensive"
-          }, {
-            "modClass": "slider__control--mathematics"
-          }, {
-            "modClass": ".slider__control--night"
-          }
-        ]
-      },
-      "activity": [
-        {
-          "title": "Веб-сайты",
-          "description": "Мир никогда не будет прежним после того как увидит ваш сайт!",
-          "class": "activity__item--websites",
-          "link": ""
-        }, {
-          "title": "Приложения",
-          "description": "Покорите топ-10 приложений в AppStore и Google Play",
-          "class": "activity__item--apps",
-          "link": ""
-        }, {
-          "title": "Презентации",
-          "description": "Вы даже не подозреваете, насколько вы изумительны!",
-          "class": "activity__item--presentations",
-          "link": ""
-        }
-      ],
-      "about": {
-        "title": "Мы — маленькая, но гордая дизайн-студия из Краснодара.",
-        "subtitle": "C 2004 года Любим точность во всем:",
-        "description": "Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.",
-        "worksTitle": "Выполняем заказы на разработку:",
-        "works": [
-          {
-            "name": "Веб-сайтов любой сложности"
-          }, {
-            "name": "Мобильных приложений для iOS и Android"
-          }, {
-            "name": "Слайдшоу и видео для корпоративных презентаций"
-          }
-        ],
-        "logo": {
-          "src": "/images/nerds-illustration.",
-          "alt": "Студия Нёрдс",
-          "width": "360",
-          "height":"208"
-        },
-        "logoSrc": "/images/nerds-illustration.png",
-        "logoAlt": "Студия Нёрдс",
-        "table": {
-          "heads": [
-            {
-              "name": "Уровень самоотдачи"
-            }, {
-              "name": "Соблюдение сроков"
-            }, {
-              "name": "Минимальная предоплата"
-            }
-          ],
-          "numbers": [
-            {
-              "indicator": "146"
-            }, {
-              "indicator": "100"
-            }, {
-              "indicator": "50"
-            }
-          ]
-        }
-      },
-      "examples": [
-        {
-          "src": "/images/html-academy-logo.",
-          "alt": "HTML Academy",
-          "width": "199",
-          "height": "68"
-        }, {
-          "src": "/images/borodinski-logo.",
-          "alt": "Barbershop Borodinsky",
-          "width": "209",
-          "height": "90"
-        }, {
-          "src": "/images/pink-logo.",
-          "alt": "Pink",
-          "width": "185",
-          "height": "52"
-        }, {
-          "src": "/images/mishka-logo.",
-          "alt": "Mishka",
-          "width": "173",
-          "height": "84"
-        }
-      ],
-      "map": {
-        "title": "Nёrds design studio",
-        "address": "191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8",
-        "phone": "тел. +7 (812) 275-75-75",
-        "button": "Напишите нам"
-      }
-    },
-    "catalog": {
-      "title": "Магазин готовых габлонов",
-      "filter": {
-        "price": {
-          "title": "Стоимость:",
-          "buttons": [
-            {
-              "class": "filter__range-button--min",
-              "aria": "Минимальная стоимость"
-            },
-            {
-              "class": "filter__range-button--max",
-              "aria": "Максимальная стоимость"
-            }
-          ],
-          "inputs": [
-            {
-              "label": "от",
-              "placeholder": "0",
-              "id": "from"
-            },
-            {
-              "label": "до",
-              "placeholder": "15 000",
-              "id": "until"
-            }
-          ]
-        },
-        "grid": {
-          "title": "Сетка:",
-          "radio": [
-            {
-              "checked": "true",
-              "disabled": "",
-              "name": "Адаптивная",
-              "id": "adaptive",
-              "value": "adaptive"
-            }, {
-              "checked": "",
-              "disabled": "",
-              "name": "Фиксированная",
-              "id": "fix",
-              "value": "fix"
-            },
-            {
-              "checked": "",
-              "disabled": "true",
-              "name": "Резиновая",
-              "id": "responsive",
-              "value": "responsive"
-            }
-          ]
-        },
-        "specificities": {
-          "title": "Особенности",
-          "checklist": [
-            {
-              "checked": "true",
-              "disabled": "",
-              "name": "Слайдер",
-              "value": "slider",
-              "id": "slider"
-            }, {
-              "checked": "",
-              "disabled": "",
-              "name": "Блок преимуществ",
-              "value": "advantages",
-              "id": "advantages"
-            }, {
-              "checked": "true",
-              "disabled": "",
-              "name": "Новости",
-              "value": "news",
-              "id": "news"
-            }, {
-              "checked": "false",
-              "disabled": "",
-              "name": "Галерея",
-              "value": "gallery",
-              "id": "gallery"
-            }, {
-              "checked": "",
-              "disabled": "true",
-              "name": "Корзина",
-              "value": "basket",
-              "id": "basket"
-            }
-          ]
-        },
-        "button": "Показать"
-      },
-      "products": {
-        "title": "Сортировать:",
-        "sortBy": [
-          {
-            "name": "По цене",
-            "current": true
-          }, {
-            "name": "По типу",
-            "current": false
-          }, {
-            "name": "По названию",
-            "current": false
-          }
-        ],
-        "sortByMajor": [
-          {
-            "name": "От большего к меньшему",
-            "class": "products__sort-major--up",
-            "current": "true"
-          }, {
-            "name": "От меньшего к большему",
-            "class": "products__sort-major--down",
-            "current": "false"
-          }
-        ],
-        "product": [
-          {
-            "src": "/images/img-sedona.",
-            "title": "Sedona",
-            "description": "Информационный сайт для туристов",
-            "price": "9 900 руб."
-          }, {
-            "src": "/images/img-pink.",
-            "title": "Pink App",
-            "description": "Продуктовый лендинг приложения для iOS и Android",
-            "price": "9 900 руб."
-          }, {
-            "src": "/images/img-barbershop.",
-            "title": "Barbershop",
-            "description": "Сайт салона красоты. Для мужчин, да.",
-            "price": "9 900 руб."
-          }, {
-            "src": "/images/img-mishka.",
-            "title": "Mishka",
-            "description": "Интернет-магазин вязаных игрушек",
-            "price": "9 900 руб."
-          }, {
-            "src": "/images/img-aplus.",
-            "title": "A Plus",
-            "description": "Лендинг курсов повышения квалификации",
-            "price": "9 900 руб."
-          }, {
-            "src": "/images/img-kvast.",
-            "title": "Кваст",
-            "description": "Промо-сайт производителя крафтового кваса",
-            "price": "9 900 руб."
-          }
-        ],
-        "pagination": [
-          {
-            "name": "1",
-            "current": true
-          }, {
-            "name": "2",
-            "current": false
-          }, {
-            "name": "3",
-            "current": false
-          }, {
-            "name": "Следующая",
-            "current": false
-          }
-        ]
-      }
-    }
-  },
-  "nav": {
-    "logo": {
-      "src": "/images/nerds-logo.png",
-      "alt": "Студия Нёрдс",
-      "width": "160",
-      "height": "65",
-      "url": "index.html",
-      "name": "Нердс-лого"
-    },
-    "menu": [
-      {
-        "url": "",
-        "name": "Студия"
-      }, {
-        "url": "",
-        "name": "Клиенты"
-      }, {
-        "url": "catalog.html",
-        "name": "Магазин"
-      }, {
-        "url": "",
-        "name": "Контакты"
-      }
-    ],
-    "user": [
-      {
-        "url": "",
-        "name": "Корзина",
-        "class": "menu__item--basket"
-      }
-    ]
-  },
-  "footer": {
-    "socials": {
-      "title": "Давайте дружить, это выгодно!",
-      "discount": "Скидка 10% для друзей из социальных сетей.",
-      "list": [
-        {
-          "class": "socials__item--vk",
-          "name": "Вконтакте",
-          "link": "www.vk.com"
-        }, {
-          "class": "socials__item--fb",
-          "name": "Фейсбук",
-          "link": "www.facebook.com"
-        }, {
-          "class": "socials__item--insta",
-          "name": "Инстаграм",
-          "link": "www.instagram.com"
-        }
-      ]
-    }
-  },
-  "popup": {
-    "title": "Напишите нам",
-    "inputs": [
-      {
-        "label": "Ваше имя:",
-        "placeholder": "Имя Фамилия",
-        "id": "name",
-        "type": "text",
-        "required": true
-      },
-      {
-        "label": "Ваше e-mail:",
-        "placeholder": "email@example.com",
-        "id": "email",
-        "type": "email",
-        "required": true
-      }
-    ],
-    "textarea": {
-      "label": "Текст письма:",
-      "placeholder": "В свободной форме",
-      "id": "textarea"
-    },
-    "button": "Отправить"
-  }
+	"about": {
+		"title": "Мы — маленькая, но гордая дизайн-студия из Краснодара.",
+		"subtitle": "C 2004 года Любим точность во всем:",
+		"description": "Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.",
+		"worksTitle": "Выполняем заказы на разработку:",
+		"works": [
+			{
+				"name": "Веб-сайтов любой сложности"
+			},
+			{
+				"name": "Мобильных приложений для iOS и Android"
+			},
+			{
+				"name": "Слайдшоу и видео для корпоративных презентаций"
+			}
+		],
+		"logo": {
+			"src": "/images/nerds-illustration.",
+			"alt": "Студия Нёрдс",
+			"width": "360",
+			"height": "208"
+		}
+	},
+	"activity": [
+		{
+			"title": "Веб-сайты",
+			"description": "Мир никогда не будет прежним после того как увидит ваш сайт!",
+			"class": "activity__item--websites",
+			"link": ""
+		},
+		{
+			"title": "Приложения",
+			"description": "Покорите топ-10 приложений в AppStore и Google Play",
+			"class": "activity__item--apps",
+			"link": ""
+		},
+		{
+			"title": "Презентации",
+			"description": "Вы даже не подозреваете, насколько вы изумительны!",
+			"class": "activity__item--presentations",
+			"link": ""
+		}
+	],
+	"examples": [
+		{
+			"src": "/images/html-academy-logo.",
+			"alt": "HTML Academy",
+			"width": "199",
+			"height": "68"
+		},
+		{
+			"src": "/images/borodinski-logo.",
+			"alt": "Barbershop Borodinsky",
+			"width": "209",
+			"height": "90"
+		},
+		{
+			"src": "/images/pink-logo.",
+			"alt": "Pink",
+			"width": "185",
+			"height": "52"
+		},
+		{
+			"src": "/images/mishka-logo.",
+			"alt": "Mishka",
+			"width": "173",
+			"height": "84"
+		}
+	],
+	"filter": {
+		"price": {
+			"title": "Стоимость:",
+			"buttons": [
+				{
+					"class": "filter__range-button--min",
+					"aria": "Минимальная стоимость"
+				},
+				{
+					"class": "filter__range-button--max",
+					"aria": "Максимальная стоимость"
+				}
+			],
+			"inputs": [
+				{
+					"label": "от",
+					"placeholder": "0",
+					"id": "from"
+				},
+				{
+					"label": "до",
+					"placeholder": "15 000",
+					"id": "until"
+				}
+			]
+		},
+		"grid": {
+			"title": "Сетка:",
+			"radio": [
+				{
+					"checked": "true",
+					"disabled": "",
+					"name": "Адаптивная",
+					"id": "adaptive",
+					"value": "adaptive"
+				},
+				{
+					"checked": "",
+					"disabled": "",
+					"name": "Фиксированная",
+					"id": "fix",
+					"value": "fix"
+				},
+				{
+					"checked": "",
+					"disabled": "true",
+					"name": "Резиновая",
+					"id": "responsive",
+					"value": "responsive"
+				}
+			]
+		},
+		"specificities": {
+			"title": "Особенности",
+			"checklist": [
+				{
+					"checked": "true",
+					"disabled": "",
+					"name": "Слайдер",
+					"value": "slider",
+					"id": "slider"
+				},
+				{
+					"checked": "",
+					"disabled": "",
+					"name": "Блок преимуществ",
+					"value": "advantages",
+					"id": "advantages"
+				},
+				{
+					"checked": "true",
+					"disabled": "",
+					"name": "Новости",
+					"value": "news",
+					"id": "news"
+				},
+				{
+					"checked": "false",
+					"disabled": "",
+					"name": "Галерея",
+					"value": "gallery",
+					"id": "gallery"
+				},
+				{
+					"checked": "",
+					"disabled": "true",
+					"name": "Корзина",
+					"value": "basket",
+					"id": "basket"
+				}
+			]
+		},
+		"button": "Показать"
+	},
+	"mainSlider": {
+		"content": [
+			{
+				"modClass": "main-slider__slide--expensive",
+				"title": "Долго, дорого, скрупулезно.",
+				"description": [
+					"Математически выверенный дизайн",
+					"для вашего сайта или мобильного приложения."
+				],
+				"imgSrc": "/images/slide-expensive.",
+				"buttonSrc": ""
+			},
+			{
+				"modClass": "main-slider__slide--mathematics",
+				"title": "Любим математику как никто другой",
+				"description": [
+					"Никакого креатива, только математические формулы",
+					"для расчета идеальных пропорций."
+				],
+				"imgSrc": "/images/slide-mathematics.",
+				"buttonSrc": ""
+			},
+			{
+				"modClass": "main-slider__slide--night",
+				"title": "Только ночь, только хардкор",
+				"description": [
+					"Работать днем, как все? Мы против этого.",
+					"Ближе к полуночи работа только начинается."
+				],
+				"imgSrc": "/images/slide-night.",
+				"buttonSrc": ""
+			}
+		]
+	},
+	"map": {
+		"title": "Nёrds design studio",
+		"address": "191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8",
+		"phone": "тел. +7 (812) 275-75-75",
+		"button": "Напишите нам"
+	},
+	"nav": {
+		"logo": {
+			"src": "/images/nerds-logo.png",
+			"alt": "Студия Нёрдс",
+			"width": "160",
+			"height": "65",
+			"url": "index.html",
+			"name": "Нердс-лого"
+		},
+		"menu": [
+			{
+				"url": "",
+				"name": "Студия"
+			},
+			{
+				"url": "",
+				"name": "Клиенты"
+			},
+			{
+				"url": "catalog.html",
+				"name": "Магазин"
+			},
+			{
+				"url": "",
+				"name": "Контакты"
+			}
+		]
+	},
+	"pages": {
+		"index": {
+			"title": "Главная страница"
+		},
+		"catalog": {
+			"title": "Магазин готовых шаблонов"
+		}
+	},
+	"popup": {
+		"title": "Напишите нам",
+		"inputs": [
+			{
+				"label": "Ваше имя:",
+				"placeholder": "Имя Фамилия",
+				"id": "name",
+				"type": "text",
+				"required": true
+			},
+			{
+				"label": "Ваше e-mail:",
+				"placeholder": "email@example.com",
+				"id": "email",
+				"type": "email",
+				"required": true
+			}
+		],
+		"textarea": {
+			"label": "Текст письма:",
+			"placeholder": "В свободной форме",
+			"id": "textarea"
+		},
+		"button": "Отправить"
+	},
+	"product": [
+		{
+			"src": "/images/img-sedona.",
+			"title": "Sedona",
+			"description": "Информационный сайт для туристов",
+			"price": "9 900 руб."
+		},
+		{
+			"src": "/images/img-pink.",
+			"title": "Pink App",
+			"description": "Продуктовый лендинг приложения для iOS и Android",
+			"price": "9 900 руб."
+		},
+		{
+			"src": "/images/img-barbershop.",
+			"title": "Barbershop",
+			"description": "Сайт салона красоты. Для мужчин, да.",
+			"price": "9 900 руб."
+		},
+		{
+			"src": "/images/img-mishka.",
+			"title": "Mishka",
+			"description": "Интернет-магазин вязаных игрушек",
+			"price": "9 900 руб."
+		},
+		{
+			"src": "/images/img-aplus.",
+			"title": "A Plus",
+			"description": "Лендинг курсов повышения квалификации",
+			"price": "9 900 руб."
+		},
+		{
+			"src": "/images/img-kvast.",
+			"title": "Кваст",
+			"description": "Промо-сайт производителя крафтового кваса",
+			"price": "9 900 руб."
+		}
+	],
+	"products": {
+		"title": "Сортировать:",
+		"sortBy": [
+			{
+				"name": "По цене",
+				"current": true
+			},
+			{
+				"name": "По типу",
+				"current": false
+			},
+			{
+				"name": "По названию",
+				"current": false
+			}
+		],
+		"sortByMajor": [
+			{
+				"name": "От большего к меньшему",
+				"class": "products__sort-major--up",
+				"current": "true"
+			},
+			{
+				"name": "От меньшего к большему",
+				"class": "products__sort-major--down",
+				"current": "false"
+			}
+		],
+		"pagination": [
+			{
+				"name": "1",
+				"current": true
+			},
+			{
+				"name": "2",
+				"current": false
+			},
+			{
+				"name": "3",
+				"current": false
+			},
+			{
+				"name": "Следующая",
+				"current": false
+			}
+		]
+	},
+	"socials": {
+		"title": "Давайте дружить, это выгодно!",
+		"discount": "Скидка 10% для друзей из социальных сетей.",
+		"list": [
+			{
+				"class": "socials__item--vk",
+				"name": "Вконтакте",
+				"link": "www.vk.com"
+			},
+			{
+				"class": "socials__item--fb",
+				"name": "Фейсбук",
+				"link": "www.facebook.com"
+			},
+			{
+				"class": "socials__item--insta",
+				"name": "Инстаграм",
+				"link": "www.instagram.com"
+			}
+		]
+	},
+	"table": {
+		"heads": [
+			{
+				"name": "Уровень самоотдачи"
+			},
+			{
+				"name": "Соблюдение сроков"
+			},
+			{
+				"name": "Минимальная предоплата"
+			}
+		],
+		"numbers": [
+			{
+				"indicator": "146"
+			},
+			{
+				"indicator": "100"
+			},
+			{
+				"indicator": "50"
+			}
+		]
+	}
 }

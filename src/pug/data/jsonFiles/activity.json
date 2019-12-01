@@ -1,0 +1,20 @@
+{
+  "activity": [
+    {
+      "title": "Веб-сайты",
+      "description": "Мир никогда не будет прежним после того как увидит ваш сайт!",
+      "class": "activity__item--websites",
+      "link": ""
+    }, {
+      "title": "Приложения",
+      "description": "Покорите топ-10 приложений в AppStore и Google Play",
+      "class": "activity__item--apps",
+      "link": ""
+    }, {
+      "title": "Презентации",
+      "description": "Вы даже не подозреваете, насколько вы изумительны!",
+      "class": "activity__item--presentations",
+      "link": ""
+    }
+  ]
+}

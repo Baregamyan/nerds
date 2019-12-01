@@ -1,13 +1,13 @@
-each product in pages.catalog.products.product
+each item in product
   a.product(href="")
     .product__top-panel
       - for (var i =0; i < 3; i++)
       span.product__circle
     picture
-      source(type="image/webp" srcet=product.src+"webp")
-      source(type="image/jpg" srcet=product.src + "jpg")
-      img.product__image(src=product.src+"jpg" alt=product.alt width="360" height="576")
+      source(type="image/webp" srcet=item.src+"webp")
+      source(type="image/jpg" srcet=item.src + "jpg")
+      img.product__image(src=item.src+"jpg" alt=item.alt width="360" height="576")
     .product__overlay
-      h3.product__title #{product.title}
-      p.product__description #{product.description}
-      span.product__price.button #{product.price}
+      h3.product__title #{item.title}
+      p.product__description #{item.description}
+      span.product__price.button #{item.price}

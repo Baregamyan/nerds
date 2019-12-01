@@ -1,0 +1,27 @@
+{
+  "popup": {
+    "title": "Напишите нам",
+    "inputs": [
+      {
+        "label": "Ваше имя:",
+        "placeholder": "Имя Фамилия",
+        "id": "name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Ваше e-mail:",
+        "placeholder": "email@example.com",
+        "id": "email",
+        "type": "email",
+        "required": true
+      }
+    ],
+    "textarea": {
+      "label": "Текст письма:",
+      "placeholder": "В свободной форме",
+      "id": "textarea"
+    },
+    "button": "Отправить"
+  }
+}

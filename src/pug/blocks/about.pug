@@ -1,17 +1,17 @@
 section.about
   .about__wrapper-description
-    h1.about__title #{pages.index.about.title}
-    p.about__description #{pages.index.about.description}
-    h3.about__subtitle #{pages.index.about.worksTitle}
+    h1.about__title #{about.title}
+    p.about__description #{about.description}
+    h3.about__subtitle #{about.worksTitle}
     ul.about__list
-      each item in pages.index.about.works
+      each item in about.works
         li.about__list-item #{item.name}
   .about__wrapper-data
     picture
-      source(type="image/webp" srcset=pages.index.about.logo.src+"webp")
-      source(type="image/png" srcset=pages.index.about.logo.src+"png")
-      img.about__logo(src=pages.index.about.logo.src + "png" alt=pages.index.about.logo.alt width=pages.index.about.logo.width height=pages.index.about.logo.height)
-    h3.about__subtitle #{pages.index.about.subtitle}
+      source(type="image/webp" srcset=about.logo.src+"webp")
+      source(type="image/png" srcset=about.logo.src+"png")
+      img.about__logo(src=about.logo.src + "png" alt=about.logo.alt width=about.logo.width height=about.logo.height)
+    h3.about__subtitle #{about.subtitle}
     include table.pug
 
 

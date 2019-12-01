@@ -5,8 +5,9 @@
   @media #{$media-sm} {
     flex-direction: row;;
   }
-  & tbody, & thead {
-    order:1;
+  & tbody,
+  & thead {
+    order: 1;
 
     @media #{$media-sm} {
       display: flex;

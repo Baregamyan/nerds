@@ -1,0 +1,91 @@
+{
+  "filter": {
+    "price": {
+      "title": "Стоимость:",
+      "buttons": [
+        {
+          "class": "filter__range-button--min",
+          "aria": "Минимальная стоимость"
+        },
+        {
+          "class": "filter__range-button--max",
+          "aria": "Максимальная стоимость"
+        }
+      ],
+      "inputs": [
+        {
+          "label": "от",
+          "placeholder": "0",
+          "id": "from"
+        },
+        {
+          "label": "до",
+          "placeholder": "15 000",
+          "id": "until"
+        }
+      ]
+    },
+    "grid": {
+      "title": "Сетка:",
+      "radio": [
+        {
+          "checked": "true",
+          "disabled": "",
+          "name": "Адаптивная",
+          "id": "adaptive",
+          "value": "adaptive"
+        }, {
+          "checked": "",
+          "disabled": "",
+          "name": "Фиксированная",
+          "id": "fix",
+          "value": "fix"
+        },
+        {
+          "checked": "",
+          "disabled": "true",
+          "name": "Резиновая",
+          "id": "responsive",
+          "value": "responsive"
+        }
+      ]
+    },
+    "specificities": {
+      "title": "Особенности",
+      "checklist": [
+        {
+          "checked": "true",
+          "disabled": "",
+          "name": "Слайдер",
+          "value": "slider",
+          "id": "slider"
+        }, {
+          "checked": "",
+          "disabled": "",
+          "name": "Блок преимуществ",
+          "value": "advantages",
+          "id": "advantages"
+        }, {
+          "checked": "true",
+          "disabled": "",
+          "name": "Новости",
+          "value": "news",
+          "id": "news"
+        }, {
+          "checked": "false",
+          "disabled": "",
+          "name": "Галерея",
+          "value": "gallery",
+          "id": "gallery"
+        }, {
+          "checked": "",
+          "disabled": "true",
+          "name": "Корзина",
+          "value": "basket",
+          "id": "basket"
+        }
+      ]
+    },
+    "button": "Показать"
+  }
+}

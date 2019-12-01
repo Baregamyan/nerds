@@ -1,9 +1,9 @@
 table.table
   thead
     tr
-      each head in pages.index.about.table.heads
+      each head in table.heads
         th.table__head #{head.name}
   tbody
     tr
-      each number in pages.index.about.table.numbers
+      each number in table.numbers
         td.table__number #{number.indicator}<sup>%</sup>

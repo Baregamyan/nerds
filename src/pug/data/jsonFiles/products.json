@@ -1,0 +1,43 @@
+{
+  "products": {
+    "title": "Сортировать:",
+    "sortBy": [
+      {
+        "name": "По цене",
+        "current": true
+      }, {
+        "name": "По типу",
+        "current": false
+      }, {
+        "name": "По названию",
+        "current": false
+      }
+    ],
+    "sortByMajor": [
+      {
+        "name": "От большего к меньшему",
+        "class": "products__sort-major--up",
+        "current": "true"
+      }, {
+        "name": "От меньшего к большему",
+        "class": "products__sort-major--down",
+        "current": "false"
+      }
+    ],
+    "pagination": [
+      {
+        "name": "1",
+        "current": true
+      }, {
+        "name": "2",
+        "current": false
+      }, {
+        "name": "3",
+        "current": false
+      }, {
+        "name": "Следующая",
+        "current": false
+      }
+    ]
+  }
+}

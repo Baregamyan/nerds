@@ -1,0 +1,25 @@
+{
+  "examples": [
+    {
+      "src": "/images/html-academy-logo.",
+      "alt": "HTML Academy",
+      "width": "199",
+      "height": "68"
+    }, {
+      "src": "/images/borodinski-logo.",
+      "alt": "Barbershop Borodinsky",
+      "width": "209",
+      "height": "90"
+    }, {
+      "src": "/images/pink-logo.",
+      "alt": "Pink",
+      "width": "185",
+      "height": "52"
+    }, {
+      "src": "/images/mishka-logo.",
+      "alt": "Mishka",
+      "width": "173",
+      "height": "84"
+    }
+  ]
+}

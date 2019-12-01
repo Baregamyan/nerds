@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "logo": {
+      "src": "/images/nerds-logo.png",
+      "alt": "Студия Нёрдс",
+      "width": "160",
+      "height": "65",
+      "url": "index.html",
+      "name": "Нердс-лого"
+    },
+    "menu": [
+      {
+        "url": "",
+        "name": "Студия"
+      }, {
+        "url": "",
+        "name": "Клиенты"
+      }, {
+        "url": "catalog.html",
+        "name": "Магазин"
+      }, {
+        "url": "",
+        "name": "Контакты"
+      }
+    ]
+  }
+}
