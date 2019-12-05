@@ -18,6 +18,7 @@ import mozjpeg from 'imagemin-mozjpeg';
 import pngquant from 'imagemin-pngquant';
 import svgstore from 'gulp-svgstore';
 import concat from 'gulp-concat';
+import plumber from 'gulp-plumber';
 
 
 /**
@@ -63,6 +64,7 @@ const path = {
  * Основные задачи
  */
 export const styles = () => src(path.styles.compile)
+  .pipe(plumber())
   .pipe(sass.sync().on('error', sass.logError))
   .pipe(dest(path.styles.save))
   .pipe(autoprefixer())
@@ -83,6 +85,7 @@ export const csscorr = () => src(`${path.styles.root}/**/*.scss`)
   .pipe(dest(path.json.save));
 
 export const views = () => src(`${path.views.compile}/*.pug`)
+  .pipe(plumber())
   .pipe(data((file) => {
     return JSON.parse(
       fs.readFileSync(`${path.json.save}/data.json`)
@@ -91,7 +94,6 @@ export const views = () => src(`${path.views.compile}/*.pug`)
   .pipe(pug({
     pretty: true
   }))
-  .pipe(pug())
   .pipe(dest(path.views.save));
 
 export const scripts = () => src(`${path.scripts.root}/*.js`)

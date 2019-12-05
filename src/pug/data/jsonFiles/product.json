@@ -1,35 +1,41 @@
 {
   "product": [
     {
-      "src": "/images/img-sedona.",
+      "name": "img-sedona",
       "title": "Sedona",
       "description": "Информационный сайт для туристов",
-      "price": "9 900 руб."
+      "price": "9 900 руб.",
+      "alt": "Седона"
     }, {
-      "src": "/images/img-pink.",
+      "name": "img-pink",
       "title": "Pink App",
       "description": "Продуктовый лендинг приложения для iOS и Android",
-      "price": "9 900 руб."
+      "price": "9 900 руб.",
+      "alt": "Пинк апп"
     }, {
-      "src": "/images/img-barbershop.",
+      "name": "img-barbershop",
       "title": "Barbershop",
       "description": "Сайт салона красоты. Для мужчин, да.",
-      "price": "9 900 руб."
+      "price": "9 900 руб.",
+      "alt": "Барбершоп"
     }, {
-      "src": "/images/img-mishka.",
+      "name": "img-mishka",
       "title": "Mishka",
       "description": "Интернет-магазин вязаных игрушек",
-      "price": "9 900 руб."
+      "price": "9 900 руб.",
+      "alt": "Мишка"
     }, {
-      "src": "/images/img-aplus.",
+      "name": "img-aplus",
       "title": "A Plus",
       "description": "Лендинг курсов повышения квалификации",
-      "price": "9 900 руб."
+      "price": "9 900 руб.",
+      "alt": "Плюс"
     }, {
-      "src": "/images/img-kvast.",
+      "name": "img-kvast",
       "title": "Кваст",
       "description": "Промо-сайт производителя крафтового кваса",
-      "price": "9 900 руб."
+      "price": "9 900 руб.",
+      "alt": "Кваст"
     }
   ]
 }

@@ -1,10 +1,10 @@
 extends ../common/layout.pug
 
 block vars
-  -var index = false
-  -var currentPageTitle = "Магазин готовых шаблонов"
-  -var currentPageName = "Нердс - Магазин готовых шаблонов"
-  -var currentPageLink = "catalog.html"
+  -var mainPage = false
+  -var currentPageTitle = site.catalog.title
+  -var currentPageName = site.catalog.name
+  -var currentPageHref = site.catalog.href
 
 block mainContent
   include ../blocks/catalog.pug

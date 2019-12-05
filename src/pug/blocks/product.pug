@@ -3,10 +3,7 @@ each item in product
     .product__top-panel
       - for (var i =0; i < 3; i++)
       span.product__circle
-    picture
-      source(type="image/webp" srcet=item.src+"webp")
-      source(type="image/jpg" srcet=item.src + "jpg")
-      img.product__image(src=item.src+"jpg" alt=item.alt width="360" height="576")
+    +picture("product__image", item.alt, false, item.name, "jpg", 360, 576)
     .product__overlay
       h3.product__title #{item.title}
       p.product__description #{item.description}

@@ -1,13 +1,10 @@
 section.main-slider.swiper-container
   .main-slider__wrapper.swiper-wrapper
     each slider in mainSlider.content
-      article.main-slider__slide.swiper-slide(class=slider.modClass)
+      article.main-slider__slide.swiper-slide(class=`main-slider${slider.modifier}`)
         .main-slider__wrapper
           h2.main-slider__title #{slider.title}
           p.main-slider__description #{slider.description[0]} <br> #{slider.description[1]}
-          a.button(href=slider.buttonSrc) Узнать больше
-        picture
-          source(type="image/webp" srcset=slider.imgSrc+'webp')
-          source(type="image/png" srcset=slider.imgSrc+'png')
-          img.main-slider__image(src=slider.imgSrc+'png' alt=slider.title)
+          a.button(href=slider.href) Узнать больше
+        +picture("main-slider__image", slider.alt, false, slider.name, "png", slider.width, slider.height)
   .main-slider__controls

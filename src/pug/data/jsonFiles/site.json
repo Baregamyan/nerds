@@ -1,0 +1,40 @@
+{
+  "site": {
+    "fonts": [
+      {
+        "name": "roboto-regular"
+      }, {
+        "name": "roboto-bold"
+      }
+    ],
+    "stylesheets": [
+      {
+        "name": "swiper.min"
+      }, {
+        "name": "style.min"
+      }
+    ],
+    "index": {
+      "title": "Нердс - Главная страница",
+      "name": "Главная страница",
+      "href": "index.html"
+    },
+    "catalog": {
+      "title": "Нердс - Магазин готовых шаблонов",
+      "name": "Магазин готовых шаблонов",
+      "href": "catalog.html"
+    },
+    "media": [
+      {
+        "resolution": "1170",
+        "name": "desktop"
+      }
+    ],
+    "dirs": {
+      "images": "images/",
+      "fonts": "fonts/",
+      "stylesheets": "css/",
+      "js": "js/"
+    }
+  }
+}

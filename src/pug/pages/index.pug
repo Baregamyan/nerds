@@ -1,10 +1,9 @@
 extends ../common/layout.pug
 
 block vars
-  -var index = true
-  -var currentPageTitle = ""
-  -var currentPageName = "Нёрдс - главная страница"
-  -var currentPageLink = "index.html"
+  -var mainPage = true
+  -var currentPageTitle = site.index.title
+  -var currentPageHref = site.index.href
 
 block mainContent
   include ../blocks/activity.pug

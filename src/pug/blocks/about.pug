@@ -7,15 +7,6 @@ section.about
       each item in about.works
         li.about__list-item #{item.name}
   .about__wrapper-data
-    picture
-      source(type="image/webp" srcset=about.logo.src+"webp")
-      source(type="image/png" srcset=about.logo.src+"png")
-      img.about__logo(src=about.logo.src + "png" alt=about.logo.alt width=about.logo.width height=about.logo.height)
+    +picture("about__logo", about.logo.alt, false, about.logo.name, "png", about.logo.width, about.logo.height)
     h3.about__subtitle #{about.subtitle}
     include table.pug
-
-
-
-
-
-

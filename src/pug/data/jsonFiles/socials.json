@@ -6,15 +6,15 @@
       {
         "class": "socials__item--vk",
         "name": "Вконтакте",
-        "link": "www.vk.com"
+        "href": "www.vk.com"
       }, {
         "class": "socials__item--fb",
         "name": "Фейсбук",
-        "link": "www.facebook.com"
+        "href": "www.facebook.com"
       }, {
         "class": "socials__item--insta",
         "name": "Инстаграм",
-        "link": "www.instagram.com"
+        "href": "www.instagram.com"
       }
     ]
   }

@@ -1,7 +1,4 @@
 section.examples
   each example in examples
     .examples__label-wrapper
-      picture
-        source(type="image/webp" srcset=example.src+"webp")
-        source(type="image/png" srcset=example.src+"png")
-        img.examples__label(src=example.src+"png" alt=example.alt width=example.width height=example.height)
+      +picture("examples__label", example.alt, false, example.name, "png", example.width, example.height)

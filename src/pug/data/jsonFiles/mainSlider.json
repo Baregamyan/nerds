@@ -2,23 +2,32 @@
   "mainSlider": {
     "content": [
       {
-        "modClass": "main-slider__slide--expensive",
+        "modifier": "--expensive",
         "title": "Долго, дорого, скрупулезно.",
         "description": ["Математически выверенный дизайн","для вашего сайта или мобильного приложения."],
-        "imgSrc": "/images/slide-expensive.",
-        "buttonSrc": ""
+        "alt": "Создаем сайты и мобильные приложения",
+        "name": "slide-expensive",
+        "href": "",
+        "width": "698",
+        "height": "413"
       }, {
-        "modClass": "main-slider__slide--mathematics",
+        "modifier": "--mathematics",
         "title": "Любим математику как никто другой",
         "description": ["Никакого креатива, только математические формулы", "для расчета идеальных пропорций."],
-        "imgSrc": "/images/slide-mathematics.",
-        "buttonSrc": ""
+        "alt": "Сугубо технический подход",
+        "name": "slide-mathematics",
+        "href": "",
+        "width": "663",
+        "height": "430"
       }, {
-        "modClass": "main-slider__slide--night",
+        "modifier": "--night",
         "title": "Только ночь, только хардкор",
         "description": ["Работать днем, как все? Мы против этого.", "Ближе к полуночи работа только начинается."],
-        "imgSrc": "/images/slide-night.",
-        "buttonSrc": ""
+        "alt": "Работам ночью",
+        "name": "slide-night",
+        "href": "",
+        "width": "759",
+        "height": "411"
       }
     ]
   }
