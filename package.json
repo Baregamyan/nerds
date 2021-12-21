@@ -29,7 +29,7 @@
     "gulp-webp": "^4.0.1",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0",
-    "swiper": "^5.1.0"
+    "swiper": "^6.1.0"
   },
   "browserslist": [
     "last 2 version",
