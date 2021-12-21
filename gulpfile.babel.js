@@ -169,6 +169,6 @@ export const dev = series(json, csscorr, parallel(swiperCSS, swiperJS), parallel
 /**
  * Для билда
  */
-export const build = series(clean, copy, json, csscorr, parallel(copy, styles, views, images, scripts), convertToWebp);
+export const build = series(clean, copy, json, csscorr, parallel(swiperCSS, swiperJS), parallel(copy, styles, views, images, scripts), convertToWebp);
 
 export default dev;
