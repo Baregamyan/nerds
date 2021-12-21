@@ -570,11 +570,11 @@ template {
         left: 50%;
         transform: translateX(-50%); } }
   .activity__item--websites::before {
-    background-image: url("/images/web-sites.png"); }
+    background-image: url("../images/web-sites.png"); }
   .activity__item--apps::before {
-    background-image: url("/images/apps.png"); }
+    background-image: url("../images/apps.png"); }
   .activity__item--presentations::before {
-    background-image: url("/images/presentations.png"); }
+    background-image: url("../images/presentations.png"); }
   @media (max-width: 992px) {
     .activity__item {
       margin-right: 0;
