@@ -68,17 +68,17 @@
   }
   &--websites {
     &::before {
-      background-image: url("/images/web-sites.png");
+      background-image: url("../images/web-sites.png");
     }
   }
   &--apps {
     &::before {
-      background-image: url("/images/apps.png");
+      background-image: url("../images/apps.png");
     }
   }
   &--presentations {
     &::before {
-      background-image: url("/images/presentations.png");
+      background-image: url("../images/presentations.png");
     }
   }
   @media #{$media-lg} {
