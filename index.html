@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/roboto-regular.woff2" as="font">
+    <link rel="preload" href="fonts/roboto-bold.woff2" as="font">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <title>Нердс - Главная страница</title>
+  </head>
+  <body>
+    <svg hidden></svg>
+    <header class="header">
+      <nav class="nav"><a class="nav__logo"><img src="/images/nerds-logo.png" alt="Нердс-лого" width="160" height="65"></a>
+        <ul class="menu menu--no-js">
+          <li><a class="menu__item" href="">Студия</a></li>
+          <li><a class="menu__item" href="">Клиенты</a></li>
+          <li><a class="menu__item" href="catalog.html">Магазин</a></li>
+          <li><a class="menu__item" href="">Контакты</a></li>
+        </ul>
+        <ul class="menu menu--user menu--no-js"></ul>
+        <button class="toggle nav__toggle" type="button" aria-label="Закрыть меню навигации"><span class="hamburger nav__hamburger"></span></button>
+      </nav>
+      <section class="main-slider swiper-container">
+        <div class="main-slider__wrapper swiper-wrapper">
+          <article class="main-slider__slide swiper-slide main-slider--expensive">
+            <div class="main-slider__wrapper">
+              <h2 class="main-slider__title">Долго, дорого, скрупулезно.</h2>
+              <p class="main-slider__description">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p><a class="button" href="">Узнать больше</a>
+            </div>
+              <picture>
+                <source type="image/webp" srcset="images/slide-expensive.webp">
+                <source type="image/png" srcset="images/slide-expensive.png"><img class="main-slider__image" src="images/slide-expensive.png" srcet="images/slide-expensive.png" width="698" height="413" alt="Создаем сайты и мобильные приложения">
+              </picture>
+          </article>
+          <article class="main-slider__slide swiper-slide main-slider--mathematics">
+            <div class="main-slider__wrapper">
+              <h2 class="main-slider__title">Любим математику как никто другой</h2>
+              <p class="main-slider__description">Никакого креатива, только математические формулы <br> для расчета идеальных пропорций.</p><a class="button" href="">Узнать больше</a>
+            </div>
+              <picture>
+                <source type="image/webp" srcset="images/slide-mathematics.webp">
+                <source type="image/png" srcset="images/slide-mathematics.png"><img class="main-slider__image" src="images/slide-mathematics.png" srcet="images/slide-mathematics.png" width="663" height="430" alt="Сугубо технический подход">
+              </picture>
+          </article>
+          <article class="main-slider__slide swiper-slide main-slider--night">
+            <div class="main-slider__wrapper">
+              <h2 class="main-slider__title">Только ночь, только хардкор</h2>
+              <p class="main-slider__description">Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается.</p><a class="button" href="">Узнать больше</a>
+            </div>
+              <picture>
+                <source type="image/webp" srcset="images/slide-night.webp">
+                <source type="image/png" srcset="images/slide-night.png"><img class="main-slider__image" src="images/slide-night.png" srcet="images/slide-night.png" width="759" height="411" alt="Работам ночью">
+              </picture>
+          </article>
+        </div>
+        <div class="main-slider__controls"></div>
+      </section>
+    </header>
+    <main>
+      <section class="activity"><a class="activity__item activity__item--websites" href="">
+          <h2 class="activity__title">Веб-сайты</h2>
+          <p class="activity__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p><span class="button button--activity">Заказать</span></a><a class="activity__item activity__item--apps" href="">
+          <h2 class="activity__title">Приложения</h2>
+          <p class="activity__description">Покорите топ-10 приложений в AppStore и Google Play</p><span class="button button--activity">Заказать</span></a><a class="activity__item activity__item--presentations" href="">
+          <h2 class="activity__title">Презентации</h2>
+          <p class="activity__description">Вы даже не подозреваете, насколько вы изумительны!</p><span class="button button--activity">Заказать</span></a>
+      </section>
+      <section class="about">
+        <div class="about__wrapper-description">
+          <h1 class="about__title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
+          <p class="about__description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3 class="about__subtitle">Выполняем заказы на разработку:</h3>
+          <ul class="about__list">
+            <li class="about__list-item">Веб-сайтов любой сложности</li>
+            <li class="about__list-item">Мобильных приложений для iOS и Android</li>
+            <li class="about__list-item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="about__wrapper-data">
+            <picture>
+              <source type="image/webp" srcset="images/nerds-illustration.webp">
+              <source type="image/png" srcset="images/nerds-illustration.png"><img class="about__logo" src="images/nerds-illustration.png" srcet="images/nerds-illustration.png" width="360" height="208" alt="Студия Нёрдс">
+            </picture>
+          <h3 class="about__subtitle">C 2004 года Любим точность во всем:</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="table__head">Уровень самоотдачи</th>
+                <th class="table__head">Соблюдение сроков</th>
+                <th class="table__head">Минимальная предоплата</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table__number">146<sup>%</sup></td>
+                <td class="table__number">100<sup>%</sup></td>
+                <td class="table__number">50<sup>%</sup></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="examples">
+        <div class="examples__label-wrapper">
+            <picture>
+              <source type="image/webp" srcset="images/html-academy-logo.webp">
+              <source type="image/png" srcset="images/html-academy-logo.png"><img class="examples__label" src="images/html-academy-logo.png" srcet="images/html-academy-logo.png" width="199" height="68" alt="HTML Academy">
+            </picture>
+        </div>
+        <div class="examples__label-wrapper">
+            <picture>
+              <source type="image/webp" srcset="images/borodinski-logo.webp">
+              <source type="image/png" srcset="images/borodinski-logo.png"><img class="examples__label" src="images/borodinski-logo.png" srcet="images/borodinski-logo.png" width="209" height="90" alt="Barbershop Borodinsky">
+            </picture>
+        </div>
+        <div class="examples__label-wrapper">
+            <picture>
+              <source type="image/webp" srcset="images/pink-logo.webp">
+              <source type="image/png" srcset="images/pink-logo.png"><img class="examples__label" src="images/pink-logo.png" srcet="images/pink-logo.png" width="185" height="52" alt="Pink">
+            </picture>
+        </div>
+        <div class="examples__label-wrapper">
+            <picture>
+              <source type="image/webp" srcset="images/mishka-logo.webp">
+              <source type="image/png" srcset="images/mishka-logo.png"><img class="examples__label" src="images/mishka-logo.png" srcet="images/mishka-logo.png" width="173" height="84" alt="Mishka">
+            </picture>
+        </div>
+      </section>
+      <section class="map" id="map">
+        <div class="map__contacts">
+          <h2 class="map__title">Nёrds design studio</h2>
+          <p class="map__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p><a class="map__phone" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
+          <button class="button button--write-us" type="button">Напишите нам</button>
+          <button class="close map__toggle"></button>
+        </div>
+      </section>
+      <section class="popup popup--write-us">
+        <h2 class="popup__title">Напишите нам</h2>
+        <button class="close close--write-us" tabindex="0"></button>
+        <form class="popup__form">
+          <div class="popup__inputs-wrapper">
+            <div class="popup__input-wrapper">
+              <label class="popup__label" for="name">Ваше имя:</label>
+              <input class="popup__input" id="name" type="text" placeholder="Имя Фамилия" required="required">
+            </div>
+            <div class="popup__input-wrapper">
+              <label class="popup__label" for="email">Ваше e-mail:</label>
+              <input class="popup__input" id="email" type="email" placeholder="email@example.com" required="required">
+            </div>
+          </div>
+          <div class="popup__textarea-wrapper">
+            <label class="popup__label" for="textarea">Текст письма:</label>
+            <textarea class="popup__textarea" id="textarea" placeholder="В свободной форме"></textarea>
+          </div>
+        </form><a class="button button--popup-write-us" href="">Отправить</a>
+      </section>
+      <div class="overlay"></div>
+    </main>
+    <footer class="footer">
+      <section class="socials">
+        <div class="socials__icons-wrapper"><a class="socials__item socials__item--vk" title="Вконтакте"></a><a class="socials__item socials__item--fb" title="Фейсбук"></a><a class="socials__item socials__item--insta" title="Инстаграм"></a>
+        </div>
+        <div class="socials__text-wrapper">
+          <h2 class="socials__title">Давайте дружить, это выгодно!</h2>
+          <p class="socials__discount">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
+    </footer>
+    <script src="js/swiper.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ffef55ce-28f1-4a3d-9a6f-bfbe68539814&amp;lang=ru_RU" type="text/javascript"></script>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

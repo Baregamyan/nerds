@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/roboto-regular.woff2" as="font">
+    <link rel="preload" href="fonts/roboto-bold.woff2" as="font">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <title>Нердс - Магазин готовых шаблонов</title>
+  </head>
+  <body>
+    <svg hidden></svg>
+    <header class="header">
+      <nav class="nav"><a class="nav__logo" href="index.html"><img src="/images/nerds-logo.png" alt="Нердс-лого" width="160" height="65"></a>
+        <ul class="menu menu--no-js">
+          <li><a class="menu__item" href="">Студия</a></li>
+          <li><a class="menu__item" href="">Клиенты</a></li>
+          <li><a class="menu__item menu__item--active">Магазин</a></li>
+          <li><a class="menu__item" href="">Контакты</a></li>
+        </ul>
+        <ul class="menu menu--user menu--no-js"></ul>
+        <button class="toggle nav__toggle" type="button" aria-label="Закрыть меню навигации"><span class="hamburger nav__hamburger"></span></button>
+      </nav>
+      <h1 class="header__title">Магазин готовых шаблонов</h1>
+    </header>
+    <main>
+      <section class="catalog">
+        <aside class="filter">
+          <form class="filter__form">
+            <fieldset class="filter__option filter__option--range">
+              <h2 class="filter__title">Стоимость:</h2>
+              <div class="filter__range-wrapper">
+                <div class="filter__range-bar">
+                  <button class="filter__range-button filter__range-button--min" type="button" aria-label="Минимальная стоимость" tabindex="0"></button>
+                  <button class="filter__range-button filter__range-button--max" type="button" aria-label="Максимальная стоимость" tabindex="0"></button>
+                </div>
+                <div class="filter__range-inputs">
+                  <div class="filter__range-inputs-wrapper">
+                    <label class="filter__label">от
+                      <input class="filter__input" placeholder="0">
+                    </label>
+                  </div>
+                  <div class="filter__range-inputs-wrapper">
+                    <label class="filter__label">до
+                      <input class="filter__input" placeholder="15 000">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filter__option filter__option--grid">
+              <h2 class="filter__title">Сетка:</h2>
+              <div class="filter__input-wrapper">
+                <input class="filter__radio-input" id="adaptive" type="radio" name="grid-chooser" value="adaptive" checked="checked" tabindex="0">
+                <label class="filter__label filter__label--checkable" for="adaptive">Адаптивная<span class="filter__radio"></span></label>
+              </div>
+              <div class="filter__input-wrapper">
+                <input class="filter__radio-input" id="fix" type="radio" name="grid-chooser" value="fix" tabindex="0">
+                <label class="filter__label filter__label--checkable" for="fix">Фиксированная<span class="filter__radio"></span></label>
+              </div>
+              <div class="filter__input-wrapper">
+                <input class="filter__radio-input" id="responsive" type="radio" name="grid-chooser" value="responsive" tabindex="0" disabled="disabled">
+                <label class="filter__label filter__label--checkable" for="responsive">Резиновая<span class="filter__radio"></span></label>
+              </div>
+            </fieldset>
+            <fieldset class="filter__option filter__option--specificities">
+              <h2 class="filter__title">Особенности</h2>
+              <div class="filter__input-wrapper">
+                <input class="filter__checkbox-input" id="slider" type="checkbox" name="specificities" value="slider" checked="checked" tabindex="0">
+                <label class="filter__label filter__label--checkable" for="slider">Слайдер<span class="filter__checkbox"></span></label>
+              </div>
+              <div class="filter__input-wrapper">
+                <input class="filter__checkbox-input" id="advantages" type="checkbox" name="specificities" value="advantages" tabindex="0">
+                <label class="filter__label filter__label--checkable" for="advantages">Блок преимуществ<span class="filter__checkbox"></span></label>
+              </div>
+              <div class="filter__input-wrapper">
+                <input class="filter__checkbox-input" id="news" type="checkbox" name="specificities" value="news" checked="checked" tabindex="0">
+                <label class="filter__label filter__label--checkable" for="news">Новости<span class="filter__checkbox"></span></label>
+              </div>
+              <div class="filter__input-wrapper">
+                <input class="filter__checkbox-input" id="gallery" type="checkbox" name="specificities" value="gallery" checked="checked" tabindex="0">
+                <label class="filter__label filter__label--checkable" for="gallery">Галерея<span class="filter__checkbox"></span></label>
+              </div>
+              <div class="filter__input-wrapper">
+                <input class="filter__checkbox-input" id="basket" type="checkbox" name="specificities" value="basket" disabled="disabled" tabindex="0">
+                <label class="filter__label filter__label--checkable" for="basket">Корзина<span class="filter__checkbox"></span></label>
+              </div>
+            </fieldset>
+            <button class="button button--gray" type="submit">Показать</button>
+          </form>
+        </aside>
+        <section class="products">
+          <div class="products__sort">
+            <h2 class="products__sort-title">Сортировать:</h2>
+            <div class="products__sort-wrapper"><a class="products__sort-by products__sort-by--active" href="">По цене</a><a class="products__sort-by" href="">По типу</a><a class="products__sort-by" href="">По названию</a>
+            </div>
+            <div class="products__sort-major-wrapper"><a class="products__sort-major products__sort-major--up products__sort-major--active" href="" area-label="От большего к меньшему"></a><a class="products__sort-major products__sort-major--down products__sort-major--active" href="" area-label="От меньшего к большему"></a>
+            </div>
+          </div>
+          <div class="products__products-wrapper"><a class="product" href="">
+              <div class="product__top-panel"><span class="product__circle"></span>
+              </div>
+                <picture>
+                  <source type="image/webp" srcset="images/img-sedona.webp">
+                  <source type="image/jpeg" srcset="images/img-sedona.jpg"><img class="product__image" src="images/img-sedona.jpg" srcet="images/img-sedona.jpg" width="360" height="576" alt="Седона">
+                </picture>
+              <div class="product__overlay">
+                <h3 class="product__title">Sedona</h3>
+                <p class="product__description">Информационный сайт для туристов</p><span class="product__price button">9 900 руб.</span>
+              </div></a><a class="product" href="">
+              <div class="product__top-panel"><span class="product__circle"></span>
+              </div>
+                <picture>
+                  <source type="image/webp" srcset="images/img-pink.webp">
+                  <source type="image/jpeg" srcset="images/img-pink.jpg"><img class="product__image" src="images/img-pink.jpg" srcet="images/img-pink.jpg" width="360" height="576" alt="Пинк апп">
+                </picture>
+              <div class="product__overlay">
+                <h3 class="product__title">Pink App</h3>
+                <p class="product__description">Продуктовый лендинг приложения для iOS и Android</p><span class="product__price button">9 900 руб.</span>
+              </div></a><a class="product" href="">
+              <div class="product__top-panel"><span class="product__circle"></span>
+              </div>
+                <picture>
+                  <source type="image/webp" srcset="images/img-barbershop.webp">
+                  <source type="image/jpeg" srcset="images/img-barbershop.jpg"><img class="product__image" src="images/img-barbershop.jpg" srcet="images/img-barbershop.jpg" width="360" height="576" alt="Барбершоп">
+                </picture>
+              <div class="product__overlay">
+                <h3 class="product__title">Barbershop</h3>
+                <p class="product__description">Сайт салона красоты. Для мужчин, да.</p><span class="product__price button">9 900 руб.</span>
+              </div></a><a class="product" href="">
+              <div class="product__top-panel"><span class="product__circle"></span>
+              </div>
+                <picture>
+                  <source type="image/webp" srcset="images/img-mishka.webp">
+                  <source type="image/jpeg" srcset="images/img-mishka.jpg"><img class="product__image" src="images/img-mishka.jpg" srcet="images/img-mishka.jpg" width="360" height="576" alt="Мишка">
+                </picture>
+              <div class="product__overlay">
+                <h3 class="product__title">Mishka</h3>
+                <p class="product__description">Интернет-магазин вязаных игрушек</p><span class="product__price button">9 900 руб.</span>
+              </div></a><a class="product" href="">
+              <div class="product__top-panel"><span class="product__circle"></span>
+              </div>
+                <picture>
+                  <source type="image/webp" srcset="images/img-aplus.webp">
+                  <source type="image/jpeg" srcset="images/img-aplus.jpg"><img class="product__image" src="images/img-aplus.jpg" srcet="images/img-aplus.jpg" width="360" height="576" alt="Плюс">
+                </picture>
+              <div class="product__overlay">
+                <h3 class="product__title">A Plus</h3>
+                <p class="product__description">Лендинг курсов повышения квалификации</p><span class="product__price button">9 900 руб.</span>
+              </div></a><a class="product" href="">
+              <div class="product__top-panel"><span class="product__circle"></span>
+              </div>
+                <picture>
+                  <source type="image/webp" srcset="images/img-kvast.webp">
+                  <source type="image/jpeg" srcset="images/img-kvast.jpg"><img class="product__image" src="images/img-kvast.jpg" srcet="images/img-kvast.jpg" width="360" height="576" alt="Кваст">
+                </picture>
+              <div class="product__overlay">
+                <h3 class="product__title">Кваст</h3>
+                <p class="product__description">Промо-сайт производителя крафтового кваса</p><span class="product__price button">9 900 руб.</span>
+              </div></a>
+          </div>
+          <div class="products__pagination-wrapper"><a class="button button--gray products__pagination products__pagination--active" href="">1</a><a class="button button--gray products__pagination" href="">2</a><a class="button button--gray products__pagination" href="">3</a><a class="button button--gray products__pagination products__pagination--wide" href="">Следующая</a>
+          </div>
+        </section>
+      </section>
+      <section class="map" id="map">
+        <div class="map__contacts">
+          <h2 class="map__title">Nёrds design studio</h2>
+          <p class="map__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p><a class="map__phone" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
+          <button class="button button--write-us" type="button">Напишите нам</button>
+          <button class="close map__toggle"></button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="socials">
+        <div class="socials__icons-wrapper"><a class="socials__item socials__item--vk" title="Вконтакте"></a><a class="socials__item socials__item--fb" title="Фейсбук"></a><a class="socials__item socials__item--insta" title="Инстаграм"></a>
+        </div>
+        <div class="socials__text-wrapper">
+          <h2 class="socials__title">Давайте дружить, это выгодно!</h2>
+          <p class="socials__discount">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
+    </footer>
+    <script src="js/swiper.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ffef55ce-28f1-4a3d-9a6f-bfbe68539814&amp;lang=ru_RU" type="text/javascript"></script>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
