@@ -1,7 +1,7 @@
 # Nerds
 Cайт дизайн студии из Краснодара.
 ## Разработка
-1.Склонируйте проект: `git clone git@github.com:Baregamyan/shelter.git`
+1.Склонируйте проект: `git clone git@github.com:Baregamyan/nerds.git`
 
 2.Установите зависимости:
 ```nodejs
