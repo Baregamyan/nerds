@@ -880,15 +880,15 @@ template {
   .socials__item--vk::after {
     width: 26px;
     height: 15px;
-    background-image: url("/images/vk-icon.png"); }
+    background-image: url("../images/vk-icon.png"); }
   .socials__item--fb::after {
     width: 12px;
     height: 22px;
-    background-image: url("/images/fb-icon.png"); }
+    background-image: url("../images/fb-icon.png"); }
   .socials__item--insta::after {
     width: 21px;
     height: 21px;
-    background-image: url("/images/insta-icon.png"); }
+    background-image: url("../images/insta-icon.png"); }
   .socials__item:hover {
     background-color: #e74246; }
   .socials__item:active {
