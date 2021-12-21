@@ -1,9 +1,8 @@
 {
-  "name": "Nerds",
+  "name": "nerds",
   "version": "1.0.0",
   "description": "Сайт дизайн студии Nerds",
   "main": "",
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.3",
@@ -11,6 +10,7 @@
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.26.5",
     "del": "^4.1.1",
+    "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
@@ -37,8 +37,8 @@
   ],
   "scripts": {
     "build": "gulp build",
-    "start": "gulp watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp dev",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "repository": {
     "type": "git",

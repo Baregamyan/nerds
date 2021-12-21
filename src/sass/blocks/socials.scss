@@ -8,10 +8,9 @@
 .socials__title {
   margin-bottom: 12px;
 
+  font-weight: 700;
   font-size: $font-xl;
   color: $font-xl;
-
-  font-width: 700;
 }
 
 .socials__discount {
@@ -49,7 +48,7 @@
       width: 26px;
       height: 15px;
 
-      background-image: url("/images/vk-icon.png");
+      background-image: url("../images/vk-icon.png");
     }
   }
   &--fb {
@@ -57,7 +56,7 @@
       width: 12px;
       height: 22px;
 
-      background-image: url("/images/fb-icon.png");
+      background-image: url("../images/fb-icon.png");
     }
   }
   &--insta {
@@ -65,7 +64,7 @@
       width: 21px;
       height: 21px;
 
-      background-image: url("/images/insta-icon.png");
+      background-image: url("../images/insta-icon.png");
     }
   }
   &:hover {

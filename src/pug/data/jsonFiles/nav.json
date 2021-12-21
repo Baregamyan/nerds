@@ -1,7 +1,7 @@
 {
   "nav": {
     "logo": {
-      "src": "/images/nerds-logo.png",
+      "src": "images/nerds-logo.png",
       "alt": "Студия Нёрдс",
       "width": "160",
       "height": "65",
@@ -10,16 +10,16 @@
     },
     "menu": [
       {
-        "href": "",
+        "href": "#",
         "name": "Студия"
       }, {
-        "href": "",
+        "href": "#",
         "name": "Клиенты"
       }, {
         "href": "catalog.html",
         "name": "Магазин"
       }, {
-        "href": "",
+        "href": "#",
         "name": "Контакты"
       }
     ]
