@@ -21,5 +21,5 @@ npm run build
 ## Деплой
 1.Деплой проекта в **gh-pages**
 ```nodejs
-npm run build
+npm run deploy
 ```
